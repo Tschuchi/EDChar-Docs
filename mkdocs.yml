@@ -72,6 +72,8 @@ plugins:
             CLAUDE.md as a working contract: CLAUDE.md als Arbeitsvertrag
             One ticket, end to end: Ein Ticket von Anfang bis Ende
             Environments and CI/CD: Umgebungen und CI/CD
+            API overview: API-Überblick
+            Data model: Datenmodell
             Authentication and ownership: Authentifizierung und Besitzprüfung
             Multiple languages: Mehrsprachigkeit
             Versions and build ID: Versionen und Build-Kennung
@@ -96,6 +98,8 @@ nav:
       - Limits and transferability to teams: showcase/limits.md
   - Architecture:
       - architektur/index.md
+      - API overview: architektur/api.md
+      - Data model: architektur/data-model.md
       - Environments and CI/CD: architektur/environments.md
       - Authentication and ownership: architektur/security.md
       - Multiple languages: architektur/i18n.md

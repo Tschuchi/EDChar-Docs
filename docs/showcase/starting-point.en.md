@@ -18,13 +18,13 @@ I started with ChatGPT, then ChatGPT Pro, then Claude Pro, all in a vibe-coding 
 
 The limit came with complexity. As the app grew, single chats were no longer enough. They got slow and used too many tokens, and every new chat started from zero. I needed something that remembers, but works more independently than a single chat.
 
+In those days I compiled the app myself and uploaded it to the server with FileZilla. Looking back, that was a very amateur setup. At the end of April 2026 the code moved to GitHub, and a pipeline took over building and uploading. Today every push runs through automated tests, and changes reach the live server only through a GoLive. I would have sworn we moved to GitHub only after the board existed. The Git history says otherwise, which is a good reminder of why observed facts beat memory.
+
 ## From my head to a board
 
-The step to several agents with a shared board was driven by sheer volume: features, bugs, improvements. Before the board, all of it lived in my head, and I had to remember everything myself. When that started to fail, I looked for an alternative to Jira. The project was not on GitHub at that time, so GitHub Issues was not an option. The result was a Markdown board in Git, which is still the backbone of the setup today (see the decision record on the board).
+The step to several agents with a shared board was driven by sheer volume: features, bugs, improvements. Before the board, all of it lived in my head, and I had to remember everything myself. When that started to fail, I looked for an alternative to Jira. The result was a Markdown board in Git, which is still the backbone of the setup today (see the decision record on the board).
 
-At that time, neither the frontend nor the backend was on GitHub. I compiled the app myself and uploaded it to the server with FileZilla. Looking back, that was a very amateur setup. Today every push runs through a CI/CD pipeline with automated tests, and changes reach the live server only through a GoLive.
-
-The switch from chats to agents happened on 22 June 2026 (see [Facts and figures](facts.md#history-and-tools)).
+The switch from chats to agents happened on 22 June 2026; the CLAUDE.md files and the ticket board followed on 27 June 2026 (see [Facts and figures](facts.md#history-and-tools)).
 
 ## Why agentic, and why this way
 

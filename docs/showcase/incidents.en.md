@@ -29,8 +29,14 @@ Incidents from the ticket archive and the history of the CLAUDE.md files that le
 ## "No tickets for me" although there were
 
 **What happened (Thore Schuchardt's account):** Backend regularly reported that there were no tickets for it, although at least one ticket with "Next: Backend" was on the board. After the rule was introduced, this no longer happened.
-**Recorded in:** There is no ticket for the incident. The rule names the mechanism: after `git pull` the file on disk is current, but the instance's conversation context still holds the older state.
-**Resulting rule:** Read the board again after every pull before reporting status (CLAUDE.md of the Board-Keeper, 2026-07-19).
+**Recorded in:** There is no ticket for the incident. Until then, Frontend and Backend worked in one shared clone of the board repository (derived from the history of their CLAUDE.md files).
+**Resulting rule:** Frontend and Backend each work in their own clone of the board repository (their CLAUDE.md files, 2026-11-06).
+
+## Stale context at the Board-Keeper
+
+**What happened:** The rule text names the mechanism: after `git pull` the file on disk is current, but the instance's conversation context still holds the older state.
+**Recorded in:** CLAUDE.md of the Board-Keeper, 2026-07-19. There is no ticket for the incident itself.
+**Resulting rule:** Read the board again after every pull before reporting status.
 
 ## A bug that could not happen
 

@@ -19,7 +19,7 @@ The setup grew in steps:
 | 2026-07-19 | Testing | Tests on the build server, reports results, own test repository (tickets 55, 56) |
 | 2026-11-19 | Docs | Writes the public documentation, reads all other repositories (ticket 238) |
 
-Each instance has a clear boundary. The frontend CLAUDE.md, for example, says: no backend code, no assumptions about backend behaviour; if a change needs a new or changed backend field, name it instead of guessing. Since 2026-11-06 every instance works in its own clone of the board repository.
+Each instance has a clear boundary. The frontend CLAUDE.md, for example, says: no backend code, no assumptions about backend behaviour; if a change needs a new or changed backend field, name it instead of guessing. Since 2026-11-06 Frontend and Backend each work in their own clone of the board repository, Docs since its start.
 
 ## Rejected alternatives
 

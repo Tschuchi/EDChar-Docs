@@ -65,6 +65,8 @@ Frontend and backend agree on field names, responses and error codes in an API c
 
 ## More on
 
+- [API overview](api.md)
+- [Data model](data-model.md)
 - [Environments and CI/CD](environments.md)
 - [Authentication and ownership](security.md)
 - [Multiple languages](i18n.md)

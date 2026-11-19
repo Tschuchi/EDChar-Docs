@@ -41,7 +41,14 @@ The CLAUDE.md files are written in German. The excerpts below are shortened Engl
 German original: *"git pull aktualisiert nur die Datei auf der Platte, nicht meinen Gesprächskontext."*
 
 **Since:** 2026-07-19, Board-Keeper.
-**Why:** The rule text names the cause: an instance that has pulled still answers from what it read earlier in the conversation. Thore Schuchardt recalls that Backend regularly reported no tickets for itself although a ticket with "Next: Backend" existed, and that this stopped after the rule was introduced (Thore Schuchardt's account). The board does not record the incident as a ticket. See [Incidents](incidents.md#no-tickets-for-me-although-there-were).
+**Why:** The rule text names the cause: an instance that has pulled still answers from what it read earlier in the conversation. The board does not record the specific incident as a ticket.
+
+### Own clone of the board for Frontend and Backend
+
+> The board is kept in the instance's own clone of the board repository. Pull there before every change, push right after it.
+
+**Since:** 2026-11-06, Frontend and Backend. Docs started with its own clone on 2026-11-19.
+**Why:** Until then, Frontend and Backend worked in one shared folder. Thore Schuchardt recalls that Backend regularly reported no tickets for itself although a ticket with "Next: Backend" existed, and that this stopped after the change (Thore Schuchardt's account). See [Incidents](incidents.md#no-tickets-for-me-although-there-were).
 
 ### Formal corrections without asking
 

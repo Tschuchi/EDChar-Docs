@@ -33,7 +33,7 @@ Dates: first CLAUDE.md commit of each instance (counted, see [Facts and figures]
 ## How they work together
 
 - **Only through the board.** Each instance updates only its own tickets: its line in the index and new entries in the ticket file. Everything else goes through the Board-Keeper. See [Ticket workflow](workflow.md).
-- **Own clone of the board.** Since 2026-11-06 every instance works in its own clone of the board repository. Before that, they shared one folder.
+- **Own clone of the board.** Since 2026-11-06 Frontend and Backend each work in their own clone of the board repository, Docs since its start. Before that, Frontend and Backend shared one folder.
 - **Repository boundaries.** No instance writes into another instance's repository. If a change needs the other side, the ticket says so and the Board-Keeper creates a ticket for that side.
 - **Rounds, not events.** An instance starts when Thore Schuchardt sends `scan`. It then works through all tickets with its name in the "Next" field and reports at the end (since 2026-11-06).
 - **Gates.** Code reaches the live server only after a green CI run, a check by Testing, acceptance by Thore Schuchardt and a GoLive. See [Testing](testing.md) and [GoLive](golive.md).
