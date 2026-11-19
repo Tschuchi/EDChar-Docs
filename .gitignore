@@ -1,0 +1,10 @@
+# Lokale Einstellungen und Prüfmuster der Docs-Instanz (nie öffentlich)
+.claude/settings.local.json
+scan_patterns.txt
+
+# Zugangsdaten und lokale Dateien
+*.local
+.env
+
+# MkDocs-Build-Ausgabe
+site/
