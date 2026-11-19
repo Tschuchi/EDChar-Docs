@@ -4,7 +4,9 @@
 
 ## Context
 
-The instances need a shared place for tickets, status and cross-repository notes (see [ADR 0001](0001-multiple-agent-instances.md)). The board started on 2026-06-27 as a single Markdown file in its own Git repository.
+The instances need a shared place for tickets, status and cross-repository notes (see [ADR 0001](0001-multiple-agent-instances.md)). The board started on 2026-06-27 as a single Markdown file in its own Git repository. Before that, Thore Schuchardt kept features, bugs and improvements in his head, and was looking for an alternative to Jira when that stopped working (Thore Schuchardt's account, see [Starting point](../showcase/starting-point.md)). GitHub Issues was not considered at the time.
+
+The comparison with GitHub Issues and Jira below is a reassessment from 2026-11-19, not the original reasoning.
 
 ## Decision
 
@@ -29,4 +31,4 @@ The core argument: how autonomously the agents act does not depend on where the 
 
 ## Sources
 
-Decision of the author on 2026-11-19, recorded in ticket 240; structure of the board repository on 2026-11-19 (observed: index file, one file per ticket, archive folder with rotated histories).
+Decision of Thore Schuchardt on 2026-11-19, recorded in ticket 240; structure of the board repository on 2026-11-19 (observed: index file, one file per ticket, archive folder with rotated histories).

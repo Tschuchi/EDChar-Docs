@@ -14,8 +14,8 @@ In a second step (ticket 118), the split between raw text and preview was replac
 
 ## Rejected alternatives
 
-- **`super_editor`:** only development versions were available, and its Markdown package was discontinued. Rejected in agreement with the author.
-- **`appflowy_editor`:** chosen first and tried in a spike. The Markdown round trip kept the content but not the exact text (list markers and emphasis were normalised, the alt text of images was lost). The author accepted that. Shortly afterwards the author decided to switch to the in-house approach and to remove the library again. The reason for the switch is not recorded on the board.
+- **`super_editor`:** only development versions were available, and its Markdown package was discontinued. Rejected in agreement with Thore Schuchardt.
+- **`appflowy_editor`:** chosen first and tried in a spike. The Markdown round trip kept the content but not the exact text (list markers and emphasis were normalised, the alt text of images was lost). Thore Schuchardt accepted that. Shortly afterwards Thore Schuchardt decided to switch to the in-house approach and to remove the library again. The reason for the switch is not recorded on the board.
 
 ## Consequences
 

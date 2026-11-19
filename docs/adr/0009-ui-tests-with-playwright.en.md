@@ -4,15 +4,15 @@
 
 ## Context
 
-The Testing instance controlled the author's Chrome browser through a browser extension. For security reasons the extension does not type credentials into login forms. The author would have had to sign in himself for every UI test and block calls by hand in the developer tools to test error cases. This contradicted the goal of automated tests with two test accounts.
+The Testing instance controlled Thore Schuchardt's Chrome browser through a browser extension. For security reasons the extension does not type credentials into login forms. Thore Schuchardt would have had to sign in himself for every UI test and block calls by hand in the developer tools to test error cases. This contradicted the goal of automated tests with two test accounts.
 
 ## Decision
 
-A spike (ticket 173) showed that Playwright can drive the app with automatic sign-in. The author decided that signing in through the login form is acceptable for automated tests. UI tests run with Playwright and two dedicated test accounts on the build server. The credentials stay outside the repositories.
+A spike (ticket 173) showed that Playwright can drive the app with automatic sign-in. Thore Schuchardt decided that signing in through the login form is acceptable for automated tests. UI tests run with Playwright and two dedicated test accounts on the build server. The credentials stay outside the repositories.
 
 ## Rejected alternatives
 
-- **Controlling the author's own browser through the extension:** previous practice, needed manual sign-in for every test.
+- **Controlling Thore Schuchardt's own browser through the extension:** previous practice, needed manual sign-in for every test.
 
 ## Consequences
 

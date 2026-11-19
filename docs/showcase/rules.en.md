@@ -18,7 +18,7 @@ The CLAUDE.md files are written in German. The excerpts below are shortened Engl
 > Frontend and Backend set a ticket to "Test" after implementing it, never to "Done". Archiving is done exclusively by the Board-Keeper.
 
 **Since:** 2026-07-04.
-**Why:** No recorded incident on the board. The rule separates "implemented" from "confirmed by the human" from "live".
+**Why:** No recorded incident on the board. The rule separates "implemented" from "confirmed by Thore Schuchardt" from "live".
 
 ### "Release" between approval and go-live
 
@@ -41,14 +41,14 @@ The CLAUDE.md files are written in German. The excerpts below are shortened Engl
 German original: *"git pull aktualisiert nur die Datei auf der Platte, nicht meinen Gesprächskontext."*
 
 **Since:** 2026-07-19, Board-Keeper.
-**Why:** The rule text names the cause: an instance that has pulled still answers from what it read earlier in the conversation. The board does not record the specific incident as a ticket.
+**Why:** The rule text names the cause: an instance that has pulled still answers from what it read earlier in the conversation. Thore Schuchardt recalls that Backend regularly reported no tickets for itself although a ticket with "Next: Backend" existed, and that this stopped after the rule was introduced (Thore Schuchardt's account). The board does not record the incident as a ticket. See [Incidents](incidents.md#no-tickets-for-me-although-there-were).
 
 ### Formal corrections without asking
 
-> Formal gaps and contradictions in tickets (repository, test approach, outdated notes) are corrected by the Board-Keeper and reported afterwards. Questions to the human are only for decisions on content: scope, priority, variants, security.
+> Formal gaps and contradictions in tickets (repository, test approach, outdated notes) are corrected by the Board-Keeper and reported afterwards. Questions to Thore Schuchardt are only for decisions on content: scope, priority, variants, security.
 
 **Since:** 2026-11-02, together with formal corrections to tickets 170, 187 and 189.
-**Why:** It keeps the human out of the loop for bookkeeping and in the loop for decisions.
+**Why:** It keeps Thore Schuchardt out of the loop for bookkeeping and in the loop for decisions.
 
 ## Evidence
 
@@ -59,7 +59,7 @@ German original: *"git pull aktualisiert nur die Datei auf der Platte, nicht mei
 German original: *"beobachtet" … "aus dem Code abgeleitet"*
 
 **Since:** 2026-10-29, added to all instances on the same day.
-**Why:** The backend version adds two related rules: a reported bug is reproduced on the build server before it is fixed, and a finding that contradicts what the human observes in production is clarified before anything changes. The board does not record a single triggering incident.
+**Why:** The backend version adds two related rules: a reported bug is reproduced on the build server before it is fixed, and a finding that contradicts what Thore Schuchardt observes in production is clarified before anything changes. Thore Schuchardt recalls a bug in a popup that Testing had derived from the code, but that could not occur in the app, and other derived anomalies that turned out to be intended behaviour (Thore Schuchardt's account). See [Incidents](incidents.md#a-bug-that-could-not-happen).
 
 ### Unobserved bugs go to Testing first
 
@@ -79,7 +79,7 @@ German original: *"beobachtet" … "aus dem Code abgeleitet"*
 
 ### No empty commits to restart a run
 
-> Do not push an empty commit to restart a run. If a run needs a restart without code changes, ask the human to restart it in Actions.
+> Do not push an empty commit to restart a run. If a run needs a restart without code changes, ask Thore Schuchardt to restart it in Actions.
 
 **Since:** 2026-11-02, Backend.
 **Why:** No recorded incident on the board. Ticket 215 later documented that backend runs often failed on infrastructure (a timeout while resetting test data) rather than on tests.

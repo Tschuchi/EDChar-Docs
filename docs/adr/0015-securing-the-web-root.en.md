@@ -22,7 +22,7 @@ No alternatives are recorded on the board.
 
 - Some blocked files answer with 403 instead of 404, because the server blocks every dotfolder, including ones that do not exist. This was accepted.
 - The copy-based deploy does not delete anything on the server. Files removed from the repository must also be deleted on the server by hand.
-- Moving the configuration file is a manual step on the server, done by the author.
+- Moving the configuration file is a manual step on the server, done by Thore Schuchardt.
 
 ## Sources
 

@@ -4,14 +4,14 @@
 
 ## Context
 
-Every build had its own readable version number. Each number needed a commit of its own and a full pipeline run of several minutes. Frontend and Backend assigned numbers independently, which led to four collisions. A rule from 2026-11-05 required reserving each number on the board before using it. In addition, the author wanted to see immediately on build and live whether he was using the latest version.
+Every build had its own readable version number. Each number needed a commit of its own and a full pipeline run of several minutes. Frontend and Backend assigned numbers independently, which led to four collisions. A rule from 2026-11-05 required reserving each number on the board before using it. In addition, Thore Schuchardt wanted to see immediately on build and live whether he was using the latest version.
 
 ## Decision
 
 Following the analysis in ticket 224:
 
 1. The pipeline writes a **build ID** (date, time, short commit hash) into the app and the API on every deploy. The app shows both. No commit is needed just for a number.
-2. A **readable version number** exists only per GoLive. The Board-Keeper assigns it (scheme vX.Y.Z, Z increases per GoLive; jumps in X or Y only by decision of the author). The first number in the new scheme was v2.4.0.
+2. A **readable version number** exists only per GoLive. The Board-Keeper assigns it (scheme vX.Y.Z, Z increases per GoLive; jumps in X or Y only by decision of Thore Schuchardt). The first number in the new scheme was v2.4.0.
 3. The changelog collects changes under a section "Unreleased (Build)". At the GoLive, Backend renames it to the new number. Old entries stay unchanged.
 4. When the app is opened and after a successful sign-in, it checks whether the server delivers a newer version. If so, it reloads itself, including clearing the service worker and browser cache. It does not check while in use, because deployments do not run during use.
 5. Cache headers make the browser check the app files before use.

@@ -45,14 +45,26 @@ These figures describe how work moved through the ticket workflow.
 
 | Figure | Value | Source and method | Limits |
 |---|---|---|---|
-| Returns by Testing | 8 of 92 tested tickets | Archived tickets with a field "Testing-Ergebnis" (testing result) and at least one ❌: tickets 74, 151, 171, 186, 195, 198, 204, 210 (derived from the archive, approximate) | The field exists from ticket 55 (2026-07-19) on. Before that, testing was done by the author. For ticket 151 the ❌ covered only the first of several steps. |
-| Returns by the author after testing on build | about 10 | Notes like "test result (author): ❌" or "error persists" (tickets 43, 75, 77, 81, 101, 104, 105, 111, 117, 118) (derived from the archive, approximate) | Free-text notes. Returns without these phrases are not counted. |
+| Returns by Testing | 8 of 92 tested tickets | Archived tickets with a field "Testing-Ergebnis" (testing result) and at least one ❌: tickets 74, 151, 171, 186, 195, 198, 204, 210 (derived from the archive, approximate) | The field exists from ticket 55 (2026-07-19) on. Before that, testing was done by Thore Schuchardt. For ticket 151 the ❌ covered only the first of several steps. |
+| Returns by Thore Schuchardt after testing on build | about 10 | Notes like "test result (Thore): ❌" or "error persists" (tickets 43, 75, 77, 81, 101, 104, 105, 111, 117, 118) (derived from the archive, approximate) | Free-text notes. Returns without these phrases are not counted. |
 | Bug tickets | 41 | Archived tickets with "Bug" in the title (counted) | Bugs filed under other titles (e.g. "Fix", "UX") are not included. |
-| Bugs by finder | Testing 17, author 11, Frontend/Backend 4, unclear 9 | Keyword classification of each bug ticket's context field (derived from the archive, approximate) | The finder is not a field of its own. The classification uses the first matching keyword and can be wrong for individual tickets. |
+| Bugs by finder | Testing 17, Thore Schuchardt 11, Frontend/Backend 4, unclear 9 | Keyword classification of each bug ticket's context field (derived from the archive, approximate) | The finder is not a field of its own. The classification uses the first matching keyword and can be wrong for individual tickets. |
 | Reopened tickets | 0 reopened after done, 2 reactivated after being deferred | Markers "reactivated" or "reopened" (tickets 64, 84) (derived from the archive, approximate) | Follow-up work is usually filed as a new ticket, so the number of reopened tickets understates rework. |
 | Lead time, open to live | median 1 day, mean 5.2 days, middle half 1–6 days, maximum 66 days (217 of 222 tickets) | Start: first commit in which the ticket heading appears in `TICKETS.md`. End: field "Erledigt am" (done on) in the archive (derived from the archive, approximate) | The end date is the go-live date, not the date of the "Release" status. Five tickets have no usable date. |
 | Share of analysis tickets | 17 of 222 (8 %) | "Analysis" in the title or in the field "Testansatz" (test approach) (derived from the archive, approximate) | The field "Testansatz" exists only since 2026-10-29. Earlier analysis tickets count only if the title says so. |
 | GoLives | 32 | See "Releases" above (counted) | |
 
-!!! info "Not on the board"
-    Costs (subscriptions, tokens) and the time spent are not recorded on the board and are therefore not listed here.
+## History and tools
+
+Dates from the Git history are commit dates. They show when something was committed, not when it was first pushed to GitHub. Push dates and the creation dates of the GitHub repositories are not recorded in the local repositories and were not determined.
+
+| Figure | Value | Source and method |
+|---|---|---|
+| First commit, frontend and backend | 2026-04-23 | `git log --reverse` in both repositories (counted) |
+| First CI/CD pipeline | 2026-04-23 | First commit of `.github/workflows` in both repositories ("automatic deployment set up"): a GitHub Actions workflow that builds and uploads the app on every push to `main` (counted). The date of the first actual run is not recorded locally. |
+| Switch from chats to agents | 2026-06-22 | First commit co-authored by Claude Code (frontend, version v2.1.12). In the backend the first such commit is from 2026-06-27. Both repositories got their CLAUDE.md on 2026-06-27, the same day the ticket board started (counted) |
+| Tools over time | ChatGPT, then ChatGPT Pro, then Claude Pro in a vibe-coding style (one chat, one problem); then agentic development with Claude Pro and several Claude Code instances | Thore Schuchardt's account |
+| Before the pipeline | Thore Schuchardt compiled the app himself and uploaded it to the server with FileZilla | Thore Schuchardt's account |
+| Time spent | About 10 hours per week on average, alongside his job | Thore Schuchardt's account |
+
+API costs of the AI assistant in the game master view are part of running the app, not of developing it, and are not listed here.

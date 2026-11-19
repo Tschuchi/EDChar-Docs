@@ -8,12 +8,12 @@ With several agent instances (see [ADR 0001](0001-multiple-agent-instances.md)) 
 
 ## Decision
 
-The author deliberately keeps the role of the router between the instances.
+Thore Schuchardt deliberately keeps the role of the router between the instances.
 
-- No instance starts without the author's `scan` command. This is a pull signal: the author decides whether and when work happens.
-- All decisions on ticket content and scope, acceptance, release and GoLive, and the rules in the CLAUDE.md files stay with the author.
+- No instance starts without Thore Schuchardt's `scan` command. This is a pull signal: Thore Schuchardt decides whether and when work happens.
+- All decisions on ticket content and scope, acceptance, release and GoLive, and the rules in the CLAUDE.md files stay with Thore Schuchardt.
 - Within a scan, the instances keep working on their own until the board holds nothing more for them (since 2026-11-06).
-- Control during execution comes from gates, not from individual prompts: a green CI run, the Testing instance, acceptance by the author, the GoLive.
+- Control during execution comes from gates, not from individual prompts: a green CI run, the Testing instance, acceptance by Thore Schuchardt, the GoLive.
 
 ## Rejected alternatives
 
@@ -22,10 +22,10 @@ The author deliberately keeps the role of the router between the instances.
 
 ## Consequences
 
-- The author sets the pace and is a potential bottleneck.
+- Thore Schuchardt sets the pace and is a potential bottleneck.
 - There is a risk that passing prompts between instances becomes routine.
 - Where the tickets are stored does not change how autonomous the agents are (see [ADR 0003](0003-markdown-board-in-git.md)).
 
 ## Sources
 
-Decision of the author on 2026-11-19, recorded in ticket 240; rule "keep working until the board is empty" in the CLAUDE.md of Frontend and Backend (2026-11-06).
+Decision of Thore Schuchardt on 2026-11-19, recorded in ticket 240; rule "keep working until the board is empty" in the CLAUDE.md of Frontend and Backend (2026-11-06).

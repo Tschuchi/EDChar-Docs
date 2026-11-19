@@ -1,7 +1,7 @@
 # Limits and transferability to teams
 
 !!! note "To be written"
-    This page is a structure only. The content will be written by the author.
+    This page is a structure only. The content will be written by Thore Schuchardt.
 
 ## One person instead of a team
 

@@ -66,6 +66,11 @@ plugins:
             Players: Spieler
             Game Masters: Spielleiter
             Rules and why they exist: Regeln und ihre Entstehung
+            Starting point: Ausgangslage
+            "The setup: five instances": "Das Setup: fünf Instanzen"
+            Ticket workflow and the Next field: Ticket-Ablauf und Nächster-Feld
+            CLAUDE.md as a working contract: CLAUDE.md als Arbeitsvertrag
+            One ticket, end to end: Ein Ticket von Anfang bis Ende
             Incidents: Vorfälle
             Facts and figures: Zahlen und Fakten
             Limits and transferability to teams: Grenzen und Übertragbarkeit auf Teams
@@ -74,9 +79,16 @@ nav:
   - Home: index.md
   - Showcase:
       - showcase/index.md
+      - Starting point: showcase/starting-point.md
+      - "The setup: five instances": showcase/setup.md
+      - Ticket workflow and the Next field: showcase/workflow.md
+      - CLAUDE.md as a working contract: showcase/claude-md.md
       - Rules and why they exist: showcase/rules.md
-      - Incidents: showcase/incidents.md
+      - GoLive: showcase/golive.md
+      - Testing: showcase/testing.md
+      - One ticket, end to end: showcase/end-to-end.md
       - Facts and figures: showcase/facts.md
+      - Incidents: showcase/incidents.md
       - Limits and transferability to teams: showcase/limits.md
   - Architecture: architektur/index.md
   - Decisions (ADR):

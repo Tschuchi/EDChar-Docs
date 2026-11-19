@@ -12,12 +12,12 @@ Characters get a user ID column that refers to the user. All affected endpoints 
 
 ## Rejected alternatives
 
-No alternatives are recorded on the board. The analysis in ticket 70 covered the effort and risks of the change. The author then decided to implement it.
+No alternatives are recorded on the board. The analysis in ticket 70 covered the effort and risks of the change. Thore Schuchardt then decided to implement it.
 
 ## Consequences
 
 - Changing the e-mail address does not affect the characters.
-- Before the migration, characters without a matching user had to be identified and clarified with the author.
+- Before the migration, characters without a matching user had to be identified and clarified with Thore Schuchardt.
 
 ## Sources
 

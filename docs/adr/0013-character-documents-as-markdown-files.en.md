@@ -4,7 +4,7 @@
 
 ## Context
 
-Players wanted to keep any number of freely named text documents per character, for example a background story, notes on artefacts or running notes, without fixed categories. The author described the feature in a requirements document on 2026-09-06.
+Players wanted to keep any number of freely named text documents per character, for example a background story, notes on artefacts or running notes, without fixed categories. Thore Schuchardt described the feature in a requirements document on 2026-09-06.
 
 ## Decision
 

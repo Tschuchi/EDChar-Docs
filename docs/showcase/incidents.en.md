@@ -16,7 +16,7 @@ Incidents from the ticket archive and the history of the CLAUDE.md files that le
 
 ## Approved, but not live
 
-**What happened:** Tickets 38–41 and 43–47 had been approved by the author, but were not live yet.
+**What happened:** Tickets 38–41 and 43–47 had been approved by Thore Schuchardt, but were not live yet.
 **Recorded in:** board commit of 2026-07-18.
 **Resulting rule:** New status "Release" between approval on the build server and the go-live.
 
@@ -26,11 +26,17 @@ Incidents from the ticket archive and the history of the CLAUDE.md files that le
 **Recorded in:** ticket 48, board commit of 2026-07-18.
 **Resulting rule:** Merges to main only through a documented release ticket. Later replaced by the "GoLive" procedure (tickets 27, 65–68).
 
-## Stale context at the Board-Keeper
+## "No tickets for me" although there were
 
-**What happened:** The rule text names the mechanism: after `git pull` the file on disk is current, but the instance's conversation context still holds the older state.
-**Recorded in:** CLAUDE.md of the Board-Keeper, 2026-07-19. There is no ticket for the incident itself.
-**Resulting rule:** Read the board again after every pull before reporting status.
+**What happened (Thore Schuchardt's account):** Backend regularly reported that there were no tickets for it, although at least one ticket with "Next: Backend" was on the board. After the rule was introduced, this no longer happened.
+**Recorded in:** There is no ticket for the incident. The rule names the mechanism: after `git pull` the file on disk is current, but the instance's conversation context still holds the older state.
+**Resulting rule:** Read the board again after every pull before reporting status (CLAUDE.md of the Board-Keeper, 2026-07-19).
+
+## A bug that could not happen
+
+**What happened (Thore Schuchardt's account):** Testing reported a bug in a popup that it had derived from the code. The bug could not occur in the app, because at that point the popup could not be opened for such a character. More generally, anomalies derived from the code sometimes turned out to be intended behaviour or no bug at all.
+**Recorded in:** There is no ticket for the incident.
+**Resulting rule:** Label every finding as "observed" or "derived from the code", reproduce bugs on the build server before fixing them, and send unobserved bugs to Testing first (CLAUDE.md of all instances, 2026-10-29). See [ADR 0005](../adr/0005-observed-or-derived.md).
 
 ## Version collisions
 
@@ -47,6 +53,7 @@ Incidents from the ticket archive and the history of the CLAUDE.md files that le
 ## Overlapping pipeline runs
 
 **What happened:** A deployment from main overwrote the build server while the tests of a develop run were still running. The develop run turned red (observed by the backend instance, 2026-11-07).
+Thore Schuchardt recalls that backend runs often turned red when Frontend pushed at the same time (Thore Schuchardt's account). The board records overlapping backend runs. The frontend analysis in the same ticket found that frontend uploads do not touch the part of the server the backend tests use (derived from the code).
 **Recorded in:** ticket 230.
 **Resulting change:** Pipeline runs on the build server no longer overlap.
 
