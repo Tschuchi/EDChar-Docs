@@ -66,7 +66,7 @@ Nur auf ausdrückliche Anweisung von Thore. Als einzelne Befehle, nicht verkette
 Danach den Pages-Lauf abwarten und die Website prüfen. Dieser Ablauf ist unabhängig vom GoLive der App.
 
 ## Sprache
-Antworten an Thore auf Deutsch. Sprache der Doku: siehe Vorgabe Thore im jeweiligen Ticket.
+Antworten an Thore auf Deutsch. Sprache der Doku: Englisch ist Originalfassung und Standardsprache der Website. Deutsch ist die Übersetzung und über den Sprachumschalter wählbar. Für das Handbuch sind beide Sprachen Pflicht, für alle anderen Seiten ist Deutsch optional; fehlende deutsche Seiten fallen auf die englische zurück.
 
 ## Änderungen an dieser CLAUDE.md
 Änderungen, die eine Vorgabe von Thore umsetzen, ohne Rückfrage committen. Eigene Regeländerungen Thore vorlegen.
