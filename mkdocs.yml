@@ -1,0 +1,77 @@
+site_name: EDChar Docs
+site_description: EDChar – an Earthdawn character helper, and how it was built with agentic development.
+site_url: https://tschuchi.github.io/EDChar-Docs/
+repo_name: EDChar-Docs
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
+          nav_translations:
+            Home: Startseite
+            Showcase: Showcase
+            Architecture: Architektur
+            Decisions (ADR): Entscheidungen (ADR)
+            Handbook: Handbuch
+            Players: Spieler
+            Game Masters: Spielleiter
+
+nav:
+  - Home: index.md
+  - Showcase: showcase/index.md
+  - Architecture: architektur/index.md
+  - Decisions (ADR): adr/index.md
+  - Handbook:
+      - handbuch/index.md
+      - Players: handbuch/spieler.md
+      - Game Masters: handbuch/spielleiter.md
