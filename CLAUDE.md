@@ -10,8 +10,12 @@ Zielgruppen:
 
 ## Darf
 - In diesem Repo lesen und schreiben, auf `develop` committen und pushen.
-- EDCharGen, EDChar_Backend, EDChar-Testing und den eigenen Coordination-Klon (`C:\dev\EDChar\EDChar-Coordination-Docs`, inklusive TICKETS_ARCHIV.md) **nur lesen**.
-- In TICKETS.md im eigenen Coordination-Klon Status und Nächster der eigenen Tickets setzen und Ergebnisse eintragen. Vor jeder Änderung `git pull`, danach sofort committen und pushen. Schlägt der Push fehl: `git pull --rebase`, erneut pushen.
+- EDCharGen, EDChar_Backend, EDChar-Testing und den eigenen Coordination-Klon (`C:\dev\EDChar\EDChar-Coordination-Docs`, inklusive TICKETS_ARCHIV.md und `archiv/`) **nur lesen**. Ausnahme ist das Ticket-Board, siehe nächster Punkt.
+- Im Ticket-Board des eigenen Coordination-Klons die eigenen Tickets pflegen (Regeln in PROTOKOLL.md):
+  - Status und Nächster ändern: nur die eigene Zeile in `INDEX.md`.
+  - Befunde und Ergebnisse: neuer Eintrag oben im Verlauf von `tickets/NNNN.md`, Format `**Docs-Update (YYYY-MM-DD):** …`.
+  - Vor jeder Änderung `git pull`. Zeile in `INDEX.md` und Ticketdatei im selben Commit committen und sofort pushen. Schlägt der Push fehl: `git pull --rebase`, erneut pushen.
+- Unmittelbar bevor du den Status eines Tickets änderst: `git pull`, die Ticketdatei erneut lesen und prüfen, ob sich Aufgabe oder Abnahmekriterium seit Beginn der Bearbeitung geändert haben. Falls ja, die Änderungen zuerst umsetzen.
 
 ## Darf NICHT
 - In EDCharGen, EDChar_Backend oder EDChar-Testing schreiben. Fehlt dort Doku (README, docs/, RULES.md, RUNBOOK.md), das im Ticket benennen statt selbst schreiben.
@@ -27,7 +31,7 @@ Alles in diesem Repo ist öffentlich. Nie übernommen werden:
 - E-Mail-Adressen, Namen von Spielern oder Testkonten, Inhalte aus echten Nutzerdaten
 - Wörtliche Kopien von CLAUDE.md-Dateien anderer Instanzen. Stattdessen bereinigte, kommentierte Auszüge mit Begründung, warum eine Regel existiert.
 
-Die konkreten Suchmuster stehen in `scan_patterns.txt` im Repo-Root. Die Datei ist per `.gitignore` ausgeschlossen, weil sie selbst die Werte enthält, die nie öffentlich werden dürfen. Ihren Inhalt nie in Dateien dieses Repos, in TICKETS.md oder in Commit-Nachrichten übernehmen.
+Die konkreten Suchmuster stehen in `scan_patterns.txt` im Repo-Root. Die Datei ist per `.gitignore` ausgeschlossen, weil sie selbst die Werte enthält, die nie öffentlich werden dürfen. Ihren Inhalt nie in Dateien dieses Repos, ins Ticket-Board oder in Commit-Nachrichten übernehmen.
 
 Vor jedem Commit diese Prüfung im Repo-Root ausführen:
 `$p = Get-Content scan_patterns.txt | Where-Object { $_ -and -not $_.StartsWith('#') }; Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch '\\(\.git|\.claude|site)\\' -and $_.Name -ne 'scan_patterns.txt' -and $_.Extension -notin '.png','.jpg','.jpeg','.gif','.webp' } | Select-String -Pattern $p | Select-Object Path,LineNumber,Line`
@@ -35,7 +39,7 @@ Vor jedem Commit diese Prüfung im Repo-Root ausführen:
 Bei einem Treffer wird nicht committet, sondern bereinigt oder Thore gefragt. Treffer, die eindeutig harmlos sind (z. B. eine bewusst öffentliche Kontaktadresse, die Thore freigegeben hat), im Commit kurz vermerken, ohne einen Wert zu nennen. Fehlt die Datei mit den Suchmustern, wird nichts committet und Thore informiert.
 
 ## Belege und Ableitungen
-Wie in allen Instanzen: Jeden Befund als "beobachtet" oder "aus dem Code abgeleitet" kennzeichnen. Zahlen im Showcase (Tickets, Endpunkte, Zeiträume) werden aus Repo, Board oder Archiv ermittelt und mit Stichtag angegeben, nicht geschätzt.
+Wie in allen Instanzen: Jeden Befund als "beobachtet" oder "aus dem Code abgeleitet" kennzeichnen. Zahlen im Showcase (Tickets, Endpunkte, Zeiträume) werden aus Repo, Board oder Archiv ermittelt und mit Stichtag angegeben, nicht geschätzt. Als Quellen für Showcase und ADRs zählen `INDEX.md` mit `tickets/`, `TICKETS_ARCHIV.md` (Archiv bis 2026-11-19) und `archiv/` (Archiv ab 2026-11-19 und rotierte Verläufe).
 
 ## Struktur
 - `docs/index.md`: Startseite
@@ -49,7 +53,7 @@ Wie in allen Instanzen: Jeden Befund als "beobachtet" oder "aus dem Code abgelei
 Windows mit PowerShell. Keine Heredocs, mehrzeilige Commit-Messages über mehrere `-m`. `cd` in andere Ordner und nachfolgende git-Befehle als getrennte Tool-Aufrufe ausführen, nicht verkettet.
 
 ## Kurzbefehl "scan"
-TICKETS.md im eigenen Coordination-Klon nach Tickets mit "Nächster: Docs" durchsuchen, nach Priorität auflisten und ohne Rückfrage mit der höchsten beginnen. Weiterarbeiten, bis kein bearbeitbares Ticket mehr für Docs da ist. Braucht ein Ticket eine Entscheidung oder Material von Thore: Frage ins Ticket, Nächster: Thore, weiter mit dem nächsten. Am Ende kurz zusammenfassen: erledigte Tickets, offene Fragen an Thore (mit Ticketnummer), Blockaden.
+Im eigenen Coordination-Klon `git pull`, dann zuerst `INDEX.md` lesen und die Zeilen mit Nächster: Docs nach Priorität auflisten. Nur die Ticketdateien dieser Tickets öffnen und ohne Rückfrage mit der höchsten Priorität beginnen. Weiterarbeiten, bis kein bearbeitbares Ticket mehr für Docs da ist. Braucht ein Ticket eine Entscheidung oder Material von Thore: Frage ins Ticket, Nächster: Thore, weiter mit dem nächsten. Am Ende kurz zusammenfassen: erledigte Tickets, offene Fragen an Thore (mit Ticketnummer), Blockaden.
 
 ## Ticket-Lifecycle
 Offen → In Arbeit → Abnahme (Thore). Doku-Tickets haben Testansatz "Analyse" und gehen nach Fertigstellung direkt auf "Abnahme (Thore)" mit Nächster: Thore. "Release" setzt nur Thore, archiviert wird nur durch den Board-Keeper.
