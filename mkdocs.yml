@@ -65,10 +65,19 @@ plugins:
             Handbook: Handbuch
             Players: Spieler
             Game Masters: Spielleiter
+            Rules and why they exist: Regeln und ihre Entstehung
+            Incidents: Vorfälle
+            Facts and figures: Zahlen und Fakten
+            Limits and transferability to teams: Grenzen und Übertragbarkeit auf Teams
 
 nav:
   - Home: index.md
-  - Showcase: showcase/index.md
+  - Showcase:
+      - showcase/index.md
+      - Rules and why they exist: showcase/rules.md
+      - Incidents: showcase/incidents.md
+      - Facts and figures: showcase/facts.md
+      - Limits and transferability to teams: showcase/limits.md
   - Architecture: architektur/index.md
   - Decisions (ADR): adr/index.md
   - Handbook:
