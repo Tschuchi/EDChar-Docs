@@ -79,7 +79,23 @@ nav:
       - Facts and figures: showcase/facts.md
       - Limits and transferability to teams: showcase/limits.md
   - Architecture: architektur/index.md
-  - Decisions (ADR): adr/index.md
+  - Decisions (ADR):
+      - adr/index.md
+      - 0001 Multiple agent instances: adr/0001-multiple-agent-instances.md
+      - 0002 Control model: adr/0002-control-model.md
+      - 0003 Markdown board in Git: adr/0003-markdown-board-in-git.md
+      - 0004 Ticket lifecycle: adr/0004-ticket-lifecycle.md
+      - 0005 Observed or derived: adr/0005-observed-or-derived.md
+      - 0006 GoLive: adr/0006-golive.md
+      - 0007 One version per GoLive: adr/0007-one-version-per-golive.md
+      - 0008 API tests after every deploy: adr/0008-api-tests-after-every-deploy.md
+      - 0009 UI tests with Playwright: adr/0009-ui-tests-with-playwright.md
+      - 0010 Consolidating a grown API: adr/0010-consolidating-a-grown-api.md
+      - 0011 charKey at the interface: adr/0011-charkey-at-the-interface.md
+      - 0012 Characters linked by user ID: adr/0012-characters-linked-by-user-id.md
+      - 0013 Character documents as Markdown: adr/0013-character-documents-as-markdown-files.md
+      - 0014 Own Markdown editor: adr/0014-own-markdown-editor.md
+      - 0015 Securing the web root: adr/0015-securing-the-web-root.md
   - Handbook:
       - handbuch/index.md
       - Players: handbuch/spieler.md

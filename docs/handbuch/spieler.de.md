@@ -154,7 +154,7 @@ Im Reiter **Notizen** legst du beliebig viele Dokumente zu diesem Charakter an, 
 - Umbenennen und Löschen geht über die Symbole daneben (Tooltips **Umbenennen** und **Löschen**).
 - Der Editor speichert automatisch und zeigt **Gespeichert …**.
 - Die Werkzeugleiste formatiert Text: Überschriften, **Fett**, **Kursiv**, **Aufzählung**, **Nummerierte Liste**. **Bild einfügen** fügt ein Bild an der Cursorposition ein. **Sprungmarke einfügen** fügt einen Link auf eine Überschrift im selben Dokument ein.
-- Zwischen **Bearbeiten** und **Vorschau** wechselst du oben. In der Vorschau öffnen Links einen neuen Browser-Tab, Sprungmarken scrollen zur Überschrift.
+- Die Formatierung erscheint schon beim Tippen, die Markdown-Zeichen bleiben verborgen. Steht der Cursor in einem Link, zeigt die Werkzeugleiste **Link öffnen**, das öffnet den Link in einem neuen Browser-Tab. In einer Sprungmarke zeigt sie **Zu „…“**, in einem Bild **Bild öffnen**.
 
 !!! example "Screenshot: `player-notes.png`"
     Reiter **Notizen** mit einem Dokument im Editor und der Werkzeugleiste.

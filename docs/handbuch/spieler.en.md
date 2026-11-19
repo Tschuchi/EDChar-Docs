@@ -154,7 +154,7 @@ The tab **Notes** holds any number of documents for this character, for example 
 - Rename and delete a document with the icons next to it (tooltips **Rename** and **Delete**).
 - The editor saves automatically and shows **Saved …**.
 - The toolbar formats text: headings, **Bold**, **Italic**, **Bullet list**, **Numbered list**. **Insert image** adds a picture at the cursor. **Insert jump mark** adds a link to a heading of the same document.
-- Switch between **Edit** and **Preview**. In the preview, links open in a new browser tab and jump marks scroll to the heading.
+- Formatting appears as you type; the Markdown characters stay hidden. Place the cursor in a link and the toolbar shows **Open link**, which opens it in a new browser tab. In a jump mark it shows **Go to "…"**, in an image **Open image**.
 
 !!! example "Screenshot: `player-notes.png`"
     Tab **Notes** with a document in the editor and the toolbar.

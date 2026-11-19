@@ -8,11 +8,11 @@ Incidents from the ticket archive and the history of the CLAUDE.md files that le
 **Recorded in:** tickets 8–22, 137, 168, 195.
 **Resulting rule:** Naming boundary in the frontend CLAUDE.md since 2026-06-27 (confirm every field name against the contract). Ticket 195 made `charKey` the standard and the backend accepts all spellings in one central place. Ticket 196 decided not to rename the database columns.
 
-## Changing the e-mail address hid the characters
+## Changing the e-mail address would have hidden the characters
 
-**What happened:** Characters were linked to their owner by the e-mail address. Changing the e-mail address updated the user, but not the characters, so the characters became inaccessible.
+**What happened:** Characters were linked to their owner by the e-mail address. Changing the e-mail address updated the user, but not the characters. All ownership checks compared the addresses, so after a change the characters would have become inaccessible (derived from the code). The planned feature "change e-mail" (ticket 75) would have made this bug reachable for every user.
 **Recorded in:** tickets 70 (analysis) and 74 (migration).
-**Resulting change:** Characters are linked by user ID instead of e-mail address.
+**Resulting change:** Characters are linked by user ID instead of e-mail address. The migration was done before the e-mail feature was built.
 
 ## Approved, but not live
 
