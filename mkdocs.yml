@@ -71,6 +71,10 @@ plugins:
             Ticket workflow and the Next field: Ticket-Ablauf und Nächster-Feld
             CLAUDE.md as a working contract: CLAUDE.md als Arbeitsvertrag
             One ticket, end to end: Ein Ticket von Anfang bis Ende
+            Environments and CI/CD: Umgebungen und CI/CD
+            Authentication and ownership: Authentifizierung und Besitzprüfung
+            Multiple languages: Mehrsprachigkeit
+            Versions and build ID: Versionen und Build-Kennung
             Incidents: Vorfälle
             Facts and figures: Zahlen und Fakten
             Limits and transferability to teams: Grenzen und Übertragbarkeit auf Teams
@@ -90,7 +94,12 @@ nav:
       - Facts and figures: showcase/facts.md
       - Incidents: showcase/incidents.md
       - Limits and transferability to teams: showcase/limits.md
-  - Architecture: architektur/index.md
+  - Architecture:
+      - architektur/index.md
+      - Environments and CI/CD: architektur/environments.md
+      - Authentication and ownership: architektur/security.md
+      - Multiple languages: architektur/i18n.md
+      - Versions and build ID: architektur/versioning.md
   - Decisions (ADR):
       - adr/index.md
       - 0001 Multiple agent instances: adr/0001-multiple-agent-instances.md
