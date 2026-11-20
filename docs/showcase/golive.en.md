@@ -11,6 +11,7 @@ A GoLive brings everything with status "Release" to the live server. Thore Schuc
 ## The GoLive
 
 ```mermaid
+%%{init: {"themeVariables": {"actorLineColor": "#8a8a8a"}}}%%
 sequenceDiagram
     participant T as Thore Schuchardt
     participant BE as Backend

@@ -12,6 +12,7 @@ EDChar distinguishes between a readable version number and a build ID (see [ADR 
 ## How it works
 
 ```mermaid
+%%{init: {"themeVariables": {"actorLineColor": "#8a8a8a"}}}%%
 sequenceDiagram
     participant P as Pipeline
     participant A as App (browser)
