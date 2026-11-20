@@ -18,8 +18,7 @@ Die Beschriftungen in diesem Handbuch sind die, die die App bei deutscher Sprach
 
 Versuchst du dich vor der Bestätigung anzumelden, zeigt die App *Bitte bestätige zuerst deine E-Mail-Adresse. Prüfe dein Postfach.*
 
-!!! example "Screenshot: `start-sign-in.png`"
-    Die Seite **Anmeldung** mit E-Mail, Passwort und den Buttons **Anmelden** und **Registrieren**.
+[![Die Seite Anmeldung mit E-Mail, Passwort und den Buttons Anmelden und Registrieren.](../assets/screenshots/de/start-sign-in.webp){ loading=lazy }](../assets/screenshots/de/start-sign-in.webp)
 
 ### Anmelden und Abmelden
 
@@ -40,8 +39,7 @@ Nach der Anmeldung siehst du links die Seitenleiste und rechts den Hauptbereich.
 - **Oben rechts:** das Symbol für das Benutzerkonto (Tooltip **Benutzerkonto**) und **Abmelden**.
 - **Spieler / Gamemaster:** Hast du in deinem Konto den Spielleiter-Modus eingeschaltet, erscheint ein Schalter zwischen **Spieler** und **Gamemaster**. Siehe [Spielleiter](spielleiter.md#spielleiter-modus-einschalten).
 
-!!! example "Screenshot: `start-home.png`"
-    Der Bildschirm nach der Anmeldung: Seitenleiste mit der Charakterliste, im Hauptbereich *Wähle einen Charakter aus oder erstelle einen neuen!*.
+[![Der Bildschirm nach der Anmeldung: Seitenleiste mit der Charakterliste, im Hauptbereich Wähle einen Charakter aus oder erstelle einen neuen!.](../assets/screenshots/de/start-home.webp){ loading=lazy }](../assets/screenshots/de/start-home.webp)
 
 ## Dein Konto
 
@@ -55,8 +53,7 @@ Klicke oben rechts auf das Symbol für das Benutzerkonto. Die Seite **Benutzerko
 | **KI** | Einen eigenen Anthropic API Key für den KI-Assistenten der Spielleitung hinterlegen. Siehe [Spielleiter](spielleiter.md#ki-assistent). |
 | **Changelog** | Was sich in welcher Version der App geändert hat. |
 
-!!! example "Screenshot: `account-data.png`"
-    Die Seite **Benutzerkonto**, Bereich **Daten**, mit der Sprachauswahl.
+[![Die Seite Benutzerkonto, Bereich Daten, mit der Sprachauswahl.](../assets/screenshots/de/account-data.webp){ loading=lazy }](../assets/screenshots/de/account-data.webp)
 
 ## Updates
 

@@ -18,8 +18,7 @@ The labels in this handbook are the ones the app shows when its language is set 
 
 If you try to sign in before confirming, the app shows *Please confirm your email address first. Check your inbox.*
 
-!!! example "Screenshot: `start-sign-in.png`"
-    The page **Sign in** with email, password and the buttons **Sign in** and **Register**.
+[![The page Sign in with email, password and the buttons Sign in and Register.](../assets/screenshots/en/start-sign-in.webp){ loading=lazy }](../assets/screenshots/en/start-sign-in.webp)
 
 ### Signing in and out
 
@@ -40,8 +39,7 @@ After signing in you see the sidebar on the left and the main area on the right.
 - **Top right:** the user account icon (tooltip **User account**) and **Logout**.
 - **Player / Gamemaster:** if you have switched on game master mode in your account, a switch between **Player** and **Gamemaster** appears. See [Game Masters](spielleiter.md#activating-game-master-mode).
 
-!!! example "Screenshot: `start-home.png`"
-    The screen after signing in: sidebar with the character list, main area with *Choose a Character or create a new one!*.
+[![The screen after signing in: sidebar with the character list, main area with Choose a Character or create a new one!.](../assets/screenshots/en/start-home.webp){ loading=lazy }](../assets/screenshots/en/start-home.webp)
 
 ## Your account
 
@@ -55,8 +53,7 @@ Click the user account icon at the top right. The page **User account** has thes
 | **AI** | Store your own Anthropic API key for the AI assistant of game masters. See [Game Masters](spielleiter.md#ai-assistant). |
 | **Changelog** | What changed in which version of the app. |
 
-!!! example "Screenshot: `account-data.png`"
-    The page **User account**, section **Data**, with the language selection.
+[![The page User account, section Data, with the language selection.](../assets/screenshots/en/account-data.webp){ loading=lazy }](../assets/screenshots/en/account-data.webp)
 
 ## Updates
 

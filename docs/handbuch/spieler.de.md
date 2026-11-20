@@ -14,8 +14,7 @@ Unter der Liste stehen diese Buttons:
 | **Import** | Lädt einen Charakter aus einer `.edchar`-Datei. Gibt es schon einen Charakter mit diesem Namen, wird nach Rückfrage eine Kopie angelegt. | immer |
 | **PDF-Export** | Lädt den offenen Charakter als PDF-Charakterbogen herunter | wenn ein Charakter offen ist |
 
-!!! example "Screenshot: `player-character-list.png`"
-    Seitenleiste mit **Deine Charaktere:** und den Buttons **Neu**, **Entf**, **Export**, **Import**, **PDF-Export**.
+[![Seitenleiste mit Deine Charaktere: und den Buttons Neu, Entf, Export, Import, PDF-Export.](../assets/screenshots/de/player-character-list.webp){ loading=lazy }](../assets/screenshots/de/player-character-list.webp)
 
 ## Einen Charakter anlegen
 
@@ -29,15 +28,13 @@ Das Anlegen hat drei Schritte.
 4. Wähle unter **Volk auswählen** dein Volk. Darunter erscheint eine Beschreibung des Volks.
 5. Klicke auf **Nächster Schritt**.
 
-!!! example "Screenshot: `player-create-step1.png`"
-    Dialog **Neuen Charakter erstellen** mit Name, Disziplin und Volk.
+[![Dialog Neuen Charakter erstellen mit Name, Disziplin und Volk.](../assets/screenshots/de/player-create-step1.webp){ loading=lazy }](../assets/screenshots/de/player-create-step1.webp)
 
 **Schritt 2: Attribute**
 
 Der Dialog **Verteilung der Attributwerte** zeigt die sechs Attribute mit **Basis**, **Kosten**, **Volk**, **Wert** und **Stufe**. Erhöhe und senke die Basiswerte. Die Summe der Kosten steht als *… von max. 72* darunter. **Nächster Schritt** ist erst verfügbar, wenn alle Punkte verteilt sind.
 
-!!! example "Screenshot: `player-create-step2.png`"
-    Dialog **Verteilung der Attributwerte** mit allen Punkten verteilt.
+[![Dialog Verteilung der Attributwerte mit allen Punkten verteilt.](../assets/screenshots/de/player-create-step2.webp){ loading=lazy }](../assets/screenshots/de/player-create-step2.webp)
 
 **Schritt 3: Talente, Zauber und Fertigkeiten**
 
@@ -59,8 +56,7 @@ Ist ein Charakter offen, zeigt der Hauptbereich **Charakteransichten** und eine 
 | **Notizen** | Eigene Dokumente zu diesem Charakter |
 | **Kampagne** | Nur sichtbar, wenn der Charakter zu einer Kampagne gehört |
 
-!!! example "Screenshot: `player-sheet-tabs.png`"
-    Charakterbogen mit **Charakteransichten** und der Reihe der Reiter.
+[![Charakterbogen mit Charakteransichten und der Reihe der Reiter.](../assets/screenshots/de/player-sheet-tabs.webp){ loading=lazy }](../assets/screenshots/de/player-sheet-tabs.webp)
 
 ### Basiswerte
 
@@ -80,8 +76,7 @@ Unter **Weitere Einflüsse oder Verbesserungen auf deine Basiswerte?** trägst d
 
 In **Wundschwelle & Erholung** nutzt du Erholungstests mit **Erh.test nutzen: Stufe … 🎲 …** und füllst sie mit **8h Schlaf** wieder auf.
 
-!!! example "Screenshot: `player-base-values.png`"
-    Reiter **Basiswerte** mit den Boxen **1. Disziplin & Kreis** und **Attribute**.
+[![Reiter Basiswerte mit den Boxen 1. Disziplin & Kreis und Attribute.](../assets/screenshots/de/player-base-values.webp){ loading=lazy }](../assets/screenshots/de/player-base-values.webp)
 
 ### Talente / Zauber / Fertigkeiten
 
@@ -92,8 +87,7 @@ In **Wundschwelle & Erholung** nutzt du Erholungstests mit **Erh.test nutzen: St
 - **Fertigkeiten:** Fertigkeiten fügst du mit **Fertigkeiten hinzufügen** hinzu. Es gibt **Standard-Fertigkeiten** und **Eigene Fertigkeiten**. Sortieren mit **A..Z sortieren** oder **Nach Kategorie sortieren**.
 - **Vielseitigkeit:** nur für Menschen. Erhöhe den Rang von Vielseitigkeit, um mit **Vielseitigkeits-Talente hinzufügen** Talente anderer Disziplinen hinzuzufügen.
 
-!!! example "Screenshot: `player-talents.png`"
-    Reiter **Talente / Zauber / Fertigkeiten** mit den Talenten eines Kreises und dem Kosten-Tooltip.
+[![Reiter Talente / Zauber / Fertigkeiten mit den Talenten eines Kreises und dem Kosten-Tooltip.](../assets/screenshots/de/player-talents.webp){ loading=lazy }](../assets/screenshots/de/player-talents.webp)
 
 ### Würfeln und Info-Suche
 
@@ -104,8 +98,7 @@ Die Reiter **Basiswerte**, **Talente / Zauber / Fertigkeiten** und **Kampf** ent
 
 Bei Würfen, für die Karma erlaubt ist, fragt die App *Möchtest du Karma für diesen Wurf verwenden?*. Bei zwei Disziplinen fragt sie zusätzlich *Karma aus welcher Disziplin?*.
 
-!!! example "Screenshot: `player-dice.png`"
-    Box **Würfeln** und ein Würfelergebnis.
+[![Box Würfeln und ein Würfelergebnis.](../assets/screenshots/de/player-dice.webp){ loading=lazy }](../assets/screenshots/de/player-dice.webp)
 
 ### Kampf
 
@@ -117,8 +110,7 @@ Bei Würfen, für die Karma erlaubt ist, fragt die App *Möchtest du Karma für 
 - **Kampf-Abwehrwerte, Rüstung & Wundschwelle** und **Todes-/Bewusstlosigkeitswert & Schaden** zeigen die aktuellen Werte.
 - **Verwendete Ausrüstung:** wähle die Waffe (**Wähle deine Waffe:**) und die Rüstung (**Wähle deine Rüstung:**), die du im Kampf benutzt.
 
-!!! example "Screenshot: `player-combat.png`"
-    Reiter **Kampf** mit einem Angriffswurf.
+[![Reiter Kampf mit einem Angriffswurf.](../assets/screenshots/de/player-combat.webp){ loading=lazy }](../assets/screenshots/de/player-combat.webp)
 
 ### Ausrüstung
 
@@ -129,8 +121,7 @@ Der Reiter hat eine Box je Kategorie: **Deine Waffen**, **Deine Rüstung**, **De
 - **Deine Beute:** Geld fügst du mit **+ Beute** hinzu und gibst es mit **- Beute** aus.
 - **Dein Bild:** ein Charakterbild hochladen. Es erscheint auch auf dem PDF-Charakterbogen.
 
-!!! example "Screenshot: `player-equipment.png`"
-    Reiter **Ausrüstung** mit Waffen und Rüstung.
+[![Reiter Ausrüstung mit Waffen und Rüstung.](../assets/screenshots/de/player-equipment.webp){ loading=lazy }](../assets/screenshots/de/player-equipment.webp)
 
 ### Legende
 
@@ -143,8 +134,7 @@ Der Reiter **Deine Legende** führt deine Legendenpunkte.
 
 Legendenpunkte, die deine Spielleitung vergibt, übernimmst du im Reiter **Kampagne**, siehe unten.
 
-!!! example "Screenshot: `player-legend.png`"
-    Reiter **Legende** mit verdienten und ausgegebenen Einträgen.
+[![Reiter Legende mit verdienten und ausgegebenen Einträgen.](../assets/screenshots/de/player-legend.webp){ loading=lazy }](../assets/screenshots/de/player-legend.webp)
 
 ### Notizen
 
@@ -156,8 +146,7 @@ Im Reiter **Notizen** legst du beliebig viele Dokumente zu diesem Charakter an, 
 - Die Werkzeugleiste formatiert Text: Überschriften, **Fett**, **Kursiv**, **Aufzählung**, **Nummerierte Liste**. **Bild einfügen** fügt ein Bild an der Cursorposition ein. **Sprungmarke einfügen** fügt einen Link auf eine Überschrift im selben Dokument ein.
 - Die Formatierung erscheint schon beim Tippen, die Markdown-Zeichen bleiben verborgen. Steht der Cursor in einem Link, zeigt die Werkzeugleiste **Link öffnen**, das öffnet den Link in einem neuen Browser-Tab. In einer Sprungmarke zeigt sie **Zu „…“**, in einem Bild **Bild öffnen**.
 
-!!! example "Screenshot: `player-notes.png`"
-    Reiter **Notizen** mit einem Dokument im Editor und der Werkzeugleiste.
+[![Reiter Notizen mit einem Dokument im Editor und der Werkzeugleiste.](../assets/screenshots/de/player-notes.webp){ loading=lazy }](../assets/screenshots/de/player-notes.webp)
 
 ## Einer Kampagne beitreten
 
@@ -168,8 +157,7 @@ Deine Spielleitung lädt dich per E-Mail ein.
 3. Wähle unter **Charakter auswählen** den Charakter, der der Kampagne beitritt. Hast du noch keinen Charakter, lege zuerst einen an.
 4. Klicke auf **Annehmen**. Die App bestätigt *Einladung angenommen – willkommen in der Kampagne!*. Mit **Ablehnen** lehnst du die Einladung ab.
 
-!!! example "Screenshot: `player-invitation.png`"
-    Seite **Kampagnen-Einladung** mit Charakterauswahl.
+[![Seite Kampagnen-Einladung mit Charakterauswahl.](../assets/screenshots/de/player-invitation.webp){ loading=lazy }](../assets/screenshots/de/player-invitation.webp)
 
 ## Der Reiter Kampagne
 
@@ -182,5 +170,4 @@ Sobald dein Charakter zu einer Kampagne gehört, erscheint der Reiter **Kampagne
 - **Dokumente vom GM:** Handouts und Dokumente, die die Spielleitung mit dir teilt.
 - **Kampagne verlassen:** nach der Bestätigung wirst du in der Kampagne als inaktiv markiert.
 
-!!! example "Screenshot: `player-campaign.png`"
-    Reiter **Kampagne** mit Legendenpunkten, Ankündigungen und Chat.
+[![Reiter Kampagne mit Legendenpunkten, Ankündigungen und Chat.](../assets/screenshots/de/player-campaign.webp){ loading=lazy }](../assets/screenshots/de/player-campaign.webp)

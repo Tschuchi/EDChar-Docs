@@ -12,6 +12,7 @@ EDChar distinguishes between a readable version number and a build ID (see [ADR 
 ## How it works
 
 ```mermaid
+%%{init: {"themeVariables": {"actorLineColor": "#8a8a8a"}}}%%
 sequenceDiagram
     participant P as Pipeline
     participant A as App (browser)
@@ -19,9 +20,11 @@ sequenceDiagram
     P->>S: deploy app with build ID and build.json
     P->>S: deploy API with build file
     A->>S: on start and after sign-in: fetch build.json
-    alt server has a different build
-        A->>A: clear service worker and caches, reload
-    else same build
+    opt server has a different build
+        A->>A: clear service worker and caches
+        A->>S: reload the app
+    end
+    opt same build
         A->>A: continue
     end
 ```

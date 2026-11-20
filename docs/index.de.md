@@ -1,17 +1,54 @@
-# EDChar
+---
+hide:
+  - navigation
+  - toc
+---
 
-EDChar ist eine Web-App für das Pen-&-Paper-Rollenspiel *Earthdawn*. Spieler legen darin ihre Charaktere an und verwalten sie, Spielleiter führen ihre Kampagnen. Die App ist eine Flutter-WebApp mit PHP-Backend und steht auf Englisch und Deutsch zur Verfügung.
+<div class="edc-hero" markdown>
+<h1 class="edc-hero__title">EDChar</h1>
 
-Die App läuft unter [edchar.schuchi.eu](https://edchar.schuchi.eu).
+Eine Web-App für das Pen-&-Paper-Rollenspiel *Earthdawn* – und ein Beispiel dafür, was eine Person mit fünf Claude-Code-Instanzen bauen kann, die über ein Ticket-Board zusammenarbeiten.
 
-## Was diese Website zeigt
+[Zur App](https://edchar.schuchi.eu){ .md-button }
+</div>
 
-EDChar ist mit agentischer Entwicklung entstanden: Mehrere Claude-Code-Instanzen mit jeweils eigenem Repository und eigenen Regeln arbeiten über ein gemeinsames Ticket-Board zusammen. Diese Website dokumentiert die App und die Art, wie sie gebaut wurde.
+EDChar ist eine Web-App für *Earthdawn*. Spieler legen darin ihre Charaktere an und verwalten sie, Spielleiter führen ihre Kampagnen. Die App ist eine Flutter-WebApp mit PHP-Backend und steht auf Englisch und Deutsch zur Verfügung. Diese Website dokumentiert die App und die Art, wie sie gebaut wurde.
 
-- **[Showcase](showcase/index.md):** wie agentische Entwicklung in der Praxis aussieht, am Beispiel EDChar. Das Setup mit mehreren Instanzen, der Ticket-Ablauf, CLAUDE.md als Arbeitsvertrag und die Regeln, die aus echten Vorfällen entstanden sind.
-- **[Architektur](architektur/index.md):** wie die Bestandteile von EDChar zusammenspielen.
-- **[Entscheidungen (ADR)](adr/index.md):** Architektur- und Prozessentscheidungen mit Kontext und verworfenen Alternativen.
-- **[Handbuch](handbuch/index.md):** Bedienung der App für Spieler und Spielleiter.
+<div class="grid cards" markdown>
 
-!!! note "Im Aufbau"
-    Diese Website entsteht gerade. Bereiche ohne Inhalt sind entsprechend gekennzeichnet. Seiten, die es noch nicht auf Deutsch gibt, erscheinen auf Englisch.
+-   :material-robot-outline:{ .lg .middle } **Showcase**
+
+    ---
+
+    Wie agentische Entwicklung in der Praxis aussieht: das Setup mit fünf Instanzen, der Ticket-Ablauf, CLAUDE.md als Arbeitsvertrag und die Regeln, die aus echten Vorfällen entstanden sind.
+
+    [:octicons-arrow-right-24: Showcase](showcase/index.md)
+
+-   :material-sitemap-outline:{ .lg .middle } **Architektur**
+
+    ---
+
+    Wie Web-App, API, PDF-Export, Datenbank und Pipelines zusammenspielen.
+
+    [:octicons-arrow-right-24: Architektur](architektur/index.md)
+
+-   :material-scale-balance:{ .lg .middle } **Entscheidungen (ADR)**
+
+    ---
+
+    Architektur- und Prozessentscheidungen mit Kontext, verworfenen Alternativen und Folgen.
+
+    [:octicons-arrow-right-24: Entscheidungen](adr/index.md)
+
+-   :material-book-open-variant:{ .lg .middle } **Handbuch**
+
+    ---
+
+    Bedienung der App für Spieler und Spielleiter.
+
+    [:octicons-arrow-right-24: Handbuch](handbuch/index.md)
+
+</div>
+
+!!! note "Noch in Arbeit"
+    Zwei Seiten des Showcase entstehen noch: "Lessons learned" und "Limits and transferability to teams". Seiten, die es noch nicht auf Deutsch gibt, erscheinen auf Englisch.

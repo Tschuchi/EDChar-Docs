@@ -8,8 +8,7 @@
 
 In game master mode the sidebar shows **Gamemaster Helper Earthdawn 1st Edition** and **Manage your Campaigns:**.
 
-!!! example "Screenshot: `gm-switch.png`"
-    The switch **Player** / **Gamemaster** and the campaign list in the sidebar.
+[![The switch Player / Gamemaster and the campaign list in the sidebar.](../assets/screenshots/en/gm-switch.webp){ loading=lazy }](../assets/screenshots/en/gm-switch.webp)
 
 ## Campaigns
 
@@ -19,8 +18,7 @@ In game master mode the sidebar shows **Gamemaster Helper Earthdawn 1st Edition*
 
 An open campaign has these tabs: **Overview**, **Participants**, **Sessions**, **Legend Points**, **Mailbox**, **Modifiers**, **Notes**, **Rulebook** and **AI**.
 
-!!! example "Screenshot: `gm-campaign-tabs.png`"
-    An open campaign with the row of tabs.
+[![An open campaign with the row of tabs.](../assets/screenshots/en/gm-campaign-tabs.webp){ loading=lazy }](../assets/screenshots/en/gm-campaign-tabs.webp)
 
 ## Overview
 
@@ -29,8 +27,7 @@ An open campaign has these tabs: **Overview**, **Participants**, **Sessions**, *
 - **Last session:** title and date of the most recent session.
 - Counters for **Participants**, **Invitations** and **New messages**.
 
-!!! example "Screenshot: `gm-overview.png`"
-    Tab **Overview** with campaign information and in-game date.
+[![Tab Overview with campaign information and in-game date.](../assets/screenshots/en/gm-overview.webp){ loading=lazy }](../assets/screenshots/en/gm-overview.webp)
 
 ## Participants
 
@@ -42,8 +39,7 @@ An open campaign has these tabs: **Overview**, **Participants**, **Sessions**, *
 
 Open invitations appear under **Open invitations** with **Sent:** and **Expires:**. Expired invitations are marked **Expired**; extend them with **Extend deadline**. **Revoke invitation** withdraws an invitation.
 
-!!! example "Screenshot: `gm-invite.png`"
-    Dialog **Invite player** and the list **Open invitations**.
+[![Dialog Invite player and the list Open invitations.](../assets/screenshots/en/gm-invite.webp){ loading=lazy }](../assets/screenshots/en/gm-invite.webp)
 
 ### Managing participants
 
@@ -54,8 +50,7 @@ The list **Participants** shows each character with **Joined:** and status.
 - Characters that have left the campaign are marked **Left**.
 - Click a participant to open a quick view of the character with picture, discipline and attributes.
 
-!!! example "Screenshot: `gm-participants.png`"
-    Tab **Participants** with participants and the quick view of a character.
+[![Tab Participants with participants and the quick view of a character.](../assets/screenshots/en/gm-participants.webp){ loading=lazy }](../assets/screenshots/en/gm-participants.webp)
 
 ## Sessions
 
@@ -63,8 +58,7 @@ The list **Participants** shows each character with **Joined:** and status.
 - The list **Sessions** shows each session with in-game days and attendees. Edit a session with the pencil (tooltip **Edit**) or delete it.
 - **Add in-game days** adds in-game days to a session afterwards.
 
-!!! example "Screenshot: `gm-sessions.png`"
-    Tab **Sessions** with the dialog **Edit session**.
+[![Tab Sessions with the dialog Edit session.](../assets/screenshots/en/gm-sessions.webp){ loading=lazy }](../assets/screenshots/en/gm-sessions.webp)
 
 ## Legend Points
 
@@ -73,16 +67,14 @@ The list **Participants** shows each character with **Joined:** and status.
 
 Awarded legend points appear under **Awarded LP** and can be deleted there. Players claim them in their tab **Campaign**. Characters that have left the campaign do not receive legend points.
 
-!!! example "Screenshot: `gm-legend-points.png`"
-    Tab **Legend Points** with the form **Award LP** and the list of awards.
+[![Tab Legend Points with the form Award LP and the list of awards.](../assets/screenshots/en/gm-legend-points.webp){ loading=lazy }](../assets/screenshots/en/gm-legend-points.webp)
 
 ## Mailbox
 
 - **Messages:** choose a character with **Select character** to read and answer their chat. In the section **Broadcast**, write an announcement to all players (*Write an announcement to all players...*) and send it with **Send to all players**. Players see it under **Announcements**.
 - **Documents:** **Upload document** shares a file. Choose the **Recipient** (one character or **All**), enter a **Title / description**, choose the file with **Select file** and click **Upload**. Players see the documents under **Documents from GM**. Uploaded documents can be deleted again.
 
-!!! example "Screenshot: `gm-mailbox.png`"
-    Tab **Mailbox** with chat, broadcast and the dialog **Upload document**.
+[![Tab Mailbox with chat, broadcast and the dialog Upload document.](../assets/screenshots/en/gm-mailbox.webp){ loading=lazy }](../assets/screenshots/en/gm-mailbox.webp)
 
 ## Modifiers
 
@@ -94,8 +86,7 @@ Modifiers change the attributes of characters, for example as the effect of a cu
 
 Active modifiers are listed under **Active modifiers** and can be deleted there. Players see the modifier on their character with the note *from GM* and the campaign name.
 
-!!! example "Screenshot: `gm-modifiers.png`"
-    Tab **Modifiers** with the form and the list of active modifiers.
+[![Tab Modifiers with the form and the list of active modifiers.](../assets/screenshots/en/gm-modifiers.webp){ loading=lazy }](../assets/screenshots/en/gm-modifiers.webp)
 
 ## Notes
 
@@ -105,8 +96,7 @@ The tab **Notes** collects notes in three sections: **NPCs**, **Locations** and 
 - Edit or delete a note with the icons next to it.
 - **Filter tags** shows only notes with certain tags. **Reset** clears the filter.
 
-!!! example "Screenshot: `gm-notes.png`"
-    Tab **Notes** with NPCs and the tag filter.
+[![Tab Notes with NPCs and the tag filter.](../assets/screenshots/en/gm-notes.webp){ loading=lazy }](../assets/screenshots/en/gm-notes.webp)
 
 ## Rulebook
 
@@ -122,5 +112,3 @@ The AI assistant generates NPCs, dialogs and locations. It uses your own Anthrop
 4. Optionally enter **Additional hints (optional)**, for example *a blacksmith in Throal, suspicious*.
 5. Click **Generate**. The **Result** appears below. **Copy** copies it to the clipboard.
 
-!!! example "Screenshot: `gm-ai.png`"
-    Tab **AI** with a generated NPC.

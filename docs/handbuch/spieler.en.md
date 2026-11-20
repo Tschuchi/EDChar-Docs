@@ -14,8 +14,7 @@ Below the list are these buttons:
 | **Import** | Loads a character from a `.edchar` file. If a character with the same name exists, a copy is created after you confirm. | always |
 | **PDF Export** | Downloads the open character as a PDF character sheet | when a character is open |
 
-!!! example "Screenshot: `player-character-list.png`"
-    Sidebar with **List of your Characters:** and the buttons **Create**, **Delete**, **Export**, **Import**, **PDF Export**.
+[![Sidebar with List of your Characters: and the buttons Create, Delete, Export, Import, PDF Export.](../assets/screenshots/en/player-character-list.webp){ loading=lazy }](../assets/screenshots/en/player-character-list.webp)
 
 ## Creating a character
 
@@ -29,15 +28,13 @@ Creating a character takes three steps.
 4. Choose your race under **Select Race**. A description of the race appears below.
 5. Click **Next Step**.
 
-!!! example "Screenshot: `player-create-step1.png`"
-    Dialog **Create a new Character** with name, discipline and race selected.
+[![Dialog Create a new Character with name, discipline and race selected.](../assets/screenshots/en/player-create-step1.webp){ loading=lazy }](../assets/screenshots/en/player-create-step1.webp)
 
 **Step 2: Attributes**
 
 The dialog **Character Attribute Values Distribution** shows the six attributes with **Base**, **Cost**, **Racial**, **Value** and **Step**. Raise and lower the base values. The total cost is shown as *… of max 72*. **Next Step** becomes available once all points are distributed.
 
-!!! example "Screenshot: `player-create-step2.png`"
-    Dialog **Character Attribute Values Distribution** with all points distributed.
+[![Dialog Character Attribute Values Distribution with all points distributed.](../assets/screenshots/en/player-create-step2.webp){ loading=lazy }](../assets/screenshots/en/player-create-step2.webp)
 
 **Step 3: Talents, spells and skills**
 
@@ -59,8 +56,7 @@ When a character is open, the main area shows **Character Views** and a row of t
 | **Notes** | Your own documents for this character |
 | **Campaign** | Only shown when the character belongs to a campaign |
 
-!!! example "Screenshot: `player-sheet-tabs.png`"
-    Character sheet with **Character Views** and the row of tabs.
+[![Character sheet with Character Views and the row of tabs.](../assets/screenshots/en/player-sheet-tabs.webp){ loading=lazy }](../assets/screenshots/en/player-sheet-tabs.webp)
 
 ### Base Values
 
@@ -80,8 +76,7 @@ Under **Any other influences or improvements on your Base Values?** you enter bo
 
 In **Wound Threshold & Recovery** you use recovery tests with **Use Rec. Test: Step … 🎲 …** and restore them with **8h Sleep**.
 
-!!! example "Screenshot: `player-base-values.png`"
-    Tab **Base Values** with the boxes **1st Discipline & Circle** and **Attributes**.
+[![Tab Base Values with the boxes 1st Discipline & Circle and Attributes.](../assets/screenshots/en/player-base-values.webp){ loading=lazy }](../assets/screenshots/en/player-base-values.webp)
 
 ### Talents / Spells / Skills
 
@@ -92,8 +87,7 @@ In **Wound Threshold & Recovery** you use recovery tests with **Use Rec. Test: S
 - **Skills:** add skills with **Add Skills**. There are **Standard Skills** and **Custom Skills**. Sort with **Sort A..Z** or **Sort Category**.
 - **Versatility:** only for humans. Raise the rank of Versatility to add talents from other disciplines with **Add Versatility Talents**.
 
-!!! example "Screenshot: `player-talents.png`"
-    Tab **Talents / Spells / Skills** with talents of one circle and the cost tooltip.
+[![Tab Talents / Spells / Skills with talents of one circle and the cost tooltip.](../assets/screenshots/en/player-talents.webp){ loading=lazy }](../assets/screenshots/en/player-talents.webp)
 
 ### Dice and info search
 
@@ -104,8 +98,7 @@ The tabs **Base Values**, **Talents / Spells / Skills** and **Combat** contain t
 
 For rolls where karma can be used, the app asks *Do you want to use Karma for this roll?*. With two disciplines it also asks *Karma from which discipline?*.
 
-!!! example "Screenshot: `player-dice.png`"
-    Box **Throw Dice** and a dice result.
+[![Box Throw Dice and a dice result.](../assets/screenshots/en/player-dice.webp){ loading=lazy }](../assets/screenshots/en/player-dice.webp)
 
 ### Combat
 
@@ -117,8 +110,7 @@ For rolls where karma can be used, the app asks *Do you want to use Karma for th
 - **Combat Defense Values, Armor & Wound Threshold** and **Death / Uncon. Rating & Damage** show the current values.
 - **Equipment that is used:** choose the weapon (**Select your weapon:**) and armor (**Select your armor:**) you use in combat.
 
-!!! example "Screenshot: `player-combat.png`"
-    Tab **Combat** with an attack roll.
+[![Tab Combat with an attack roll.](../assets/screenshots/en/player-combat.webp){ loading=lazy }](../assets/screenshots/en/player-combat.webp)
 
 ### Equipment
 
@@ -129,8 +121,7 @@ The tab has one box per category: **Your Weapons**, **Your Armor**, **Your Loot*
 - **Your Loot:** add and spend money with **+ Loot** and **- Loot**.
 - **Your picture:** upload a character picture. It also appears on the PDF character sheet.
 
-!!! example "Screenshot: `player-equipment.png`"
-    Tab **Equipment** with weapons and armor.
+[![Tab Equipment with weapons and armor.](../assets/screenshots/en/player-equipment.webp){ loading=lazy }](../assets/screenshots/en/player-equipment.webp)
 
 ### Legend
 
@@ -143,8 +134,7 @@ The tab **Your Legend** lists your legend points.
 
 Legend points awarded by your game master are claimed in the tab **Campaign**, see below.
 
-!!! example "Screenshot: `player-legend.png`"
-    Tab **Legend** with earned and spent entries.
+[![Tab Legend with earned and spent entries.](../assets/screenshots/en/player-legend.webp){ loading=lazy }](../assets/screenshots/en/player-legend.webp)
 
 ### Notes
 
@@ -156,8 +146,7 @@ The tab **Notes** holds any number of documents for this character, for example 
 - The toolbar formats text: headings, **Bold**, **Italic**, **Bullet list**, **Numbered list**. **Insert image** adds a picture at the cursor. **Insert jump mark** adds a link to a heading of the same document.
 - Formatting appears as you type; the Markdown characters stay hidden. Place the cursor in a link and the toolbar shows **Open link**, which opens it in a new browser tab. In a jump mark it shows **Go to "…"**, in an image **Open image**.
 
-!!! example "Screenshot: `player-notes.png`"
-    Tab **Notes** with a document in the editor and the toolbar.
+[![Tab Notes with a document in the editor and the toolbar.](../assets/screenshots/en/player-notes.webp){ loading=lazy }](../assets/screenshots/en/player-notes.webp)
 
 ## Joining a campaign
 
@@ -168,8 +157,7 @@ Your game master invites you by email.
 3. Choose the character that joins the campaign under **Select character**. If you have no character yet, create one first.
 4. Click **Accept**. The app confirms *Invitation accepted – welcome to the campaign!*. **Decline** rejects the invitation.
 
-!!! example "Screenshot: `player-invitation.png`"
-    Page **Campaign invitation** with character selection.
+[![Page Campaign invitation with character selection.](../assets/screenshots/en/player-invitation.webp){ loading=lazy }](../assets/screenshots/en/player-invitation.webp)
 
 ## The Campaign tab
 
@@ -182,5 +170,4 @@ Once your character belongs to a campaign, the tab **Campaign** appears. A numbe
 - **Documents from GM:** handouts and documents the game master has shared with you.
 - **Leave campaign:** after confirming, you are marked as inactive in the campaign.
 
-!!! example "Screenshot: `player-campaign.png`"
-    Tab **Campaign** with legend points, announcements and chat.
+[![Tab Campaign with legend points, announcements and chat.](../assets/screenshots/en/player-campaign.webp){ loading=lazy }](../assets/screenshots/en/player-campaign.webp)
