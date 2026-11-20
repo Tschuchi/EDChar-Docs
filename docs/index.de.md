@@ -13,5 +13,5 @@ EDChar ist mit agentischer Entwicklung entstanden: Mehrere Claude-Code-Instanzen
 - **[Entscheidungen (ADR)](adr/index.md):** Architektur- und Prozessentscheidungen mit Kontext und verworfenen Alternativen.
 - **[Handbuch](handbuch/index.md):** Bedienung der App für Spieler und Spielleiter.
 
-!!! note "Im Aufbau"
-    Diese Website entsteht gerade. Bereiche ohne Inhalt sind entsprechend gekennzeichnet. Seiten, die es noch nicht auf Deutsch gibt, erscheinen auf Englisch.
+!!! note "Noch in Arbeit"
+    Zwei Seiten des Showcase entstehen noch: "Lessons learned" und "Limits and transferability to teams". Seiten, die es noch nicht auf Deutsch gibt, erscheinen auf Englisch.

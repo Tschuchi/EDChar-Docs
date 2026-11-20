@@ -2,6 +2,9 @@ site_name: EDChar Docs
 site_description: EDChar – an Earthdawn character helper, and how it was built with agentic development.
 site_url: https://tschuchi.github.io/EDChar-Docs/
 repo_name: EDChar-Docs
+repo_url: https://github.com/Tschuchi/EDChar-Docs
+edit_uri: ""
+copyright: Earthdawn is a Registered Trademark of FASA Corporation. All Rights Reserved.
 docs_dir: docs
 
 theme:

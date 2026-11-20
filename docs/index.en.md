@@ -13,5 +13,5 @@ EDChar was built with agentic development: several Claude Code instances, each w
 - **[Decisions (ADR)](adr/index.md):** architecture and process decisions with their context and the alternatives that were rejected.
 - **[Handbook](handbuch/index.md):** how to use the app, for players and game masters.
 
-!!! note "Work in progress"
-    This website is being built. Sections that are still empty are marked as such.
+!!! note "Still to come"
+    Two pages of the showcase are still being written: "Lessons learned" and "Limits and transferability to teams".

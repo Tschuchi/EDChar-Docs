@@ -32,7 +32,7 @@ flowchart LR
 ### Backend
 
 ```mermaid
-flowchart LR
+flowchart TB
     P[push] --> L[PHP syntax check<br/>no BOM in PHP files]
     L --> S[PDF smoke test]
     S --> D1[Deploy to build]
