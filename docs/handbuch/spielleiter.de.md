@@ -8,8 +8,7 @@
 
 Im Spielleiter-Modus zeigt die Seitenleiste **Gamemaster Helper Earthdawn 1st Edition** und **Kampagnen verwalten:**.
 
-!!! example "Screenshot: `gm-switch.png`"
-    Der Schalter **Spieler** / **Gamemaster** und die Kampagnenliste in der Seitenleiste.
+[![Der Schalter Spieler / Gamemaster und die Kampagnenliste in der Seitenleiste.](../assets/screenshots/de/gm-switch.webp){ loading=lazy }](../assets/screenshots/de/gm-switch.webp)
 
 ## Kampagnen
 
@@ -19,8 +18,7 @@ Im Spielleiter-Modus zeigt die Seitenleiste **Gamemaster Helper Earthdawn 1st Ed
 
 Eine offene Kampagne hat diese Reiter: **Übersicht**, **Teilnehmer**, **Sitzungen**, **Legendenpunkte**, **Postfach**, **Modifikatoren**, **Notizen**, **Regelwerk** und **KI**.
 
-!!! example "Screenshot: `gm-campaign-tabs.png`"
-    Eine offene Kampagne mit der Reihe der Reiter.
+[![Eine offene Kampagne mit der Reihe der Reiter.](../assets/screenshots/de/gm-campaign-tabs.webp){ loading=lazy }](../assets/screenshots/de/gm-campaign-tabs.webp)
 
 ## Übersicht
 
@@ -29,8 +27,7 @@ Eine offene Kampagne hat diese Reiter: **Übersicht**, **Teilnehmer**, **Sitzung
 - **Letzte Sitzung:** Titel und Datum der letzten Sitzung.
 - Zähler für **Teilnehmer**, **Einladungen** und **Neue Nachrichten**.
 
-!!! example "Screenshot: `gm-overview.png`"
-    Reiter **Übersicht** mit Kampagneninformationen und InGame-Datum.
+[![Reiter Übersicht mit Kampagneninformationen und InGame-Datum.](../assets/screenshots/de/gm-overview.webp){ loading=lazy }](../assets/screenshots/de/gm-overview.webp)
 
 ## Teilnehmer
 
@@ -42,8 +39,7 @@ Eine offene Kampagne hat diese Reiter: **Übersicht**, **Teilnehmer**, **Sitzung
 
 Offene Einladungen stehen unter **Offene Einladungen** mit **Gesendet:** und **Läuft ab:**. Abgelaufene Einladungen sind mit **Abgelaufen** markiert, mit **Frist verlängern** verlängerst du sie. **Einladung widerrufen** zieht eine Einladung zurück.
 
-!!! example "Screenshot: `gm-invite.png`"
-    Dialog **Spieler einladen** und die Liste **Offene Einladungen**.
+[![Dialog Spieler einladen und die Liste Offene Einladungen.](../assets/screenshots/de/gm-invite.webp){ loading=lazy }](../assets/screenshots/de/gm-invite.webp)
 
 ### Teilnehmer verwalten
 
@@ -54,8 +50,7 @@ Die Liste **Teilnehmer** zeigt jeden Charakter mit **Beigetreten:** und Status.
 - Charaktere, die die Kampagne verlassen haben, sind mit **Verlassen** markiert.
 - Ein Klick auf einen Teilnehmer öffnet eine Schnellansicht des Charakters mit Bild, Disziplin und Attributen.
 
-!!! example "Screenshot: `gm-participants.png`"
-    Reiter **Teilnehmer** mit Teilnehmern und der Schnellansicht eines Charakters.
+[![Reiter Teilnehmer mit Teilnehmern und der Schnellansicht eines Charakters.](../assets/screenshots/de/gm-participants.webp){ loading=lazy }](../assets/screenshots/de/gm-participants.webp)
 
 ## Sitzungen
 
@@ -63,8 +58,7 @@ Die Liste **Teilnehmer** zeigt jeden Charakter mit **Beigetreten:** und Status.
 - Die Liste **Sitzungen** zeigt jede Sitzung mit InGame-Tagen und Teilnehmern. Bearbeiten mit dem Stift (Tooltip **Bearbeiten**) oder löschen.
 - **InGame-Tage nachtragen** ergänzt die InGame-Tage einer Sitzung nachträglich.
 
-!!! example "Screenshot: `gm-sessions.png`"
-    Reiter **Sitzungen** mit dem Dialog **Sitzung bearbeiten**.
+[![Reiter Sitzungen mit dem Dialog Sitzung bearbeiten.](../assets/screenshots/de/gm-sessions.webp){ loading=lazy }](../assets/screenshots/de/gm-sessions.webp)
 
 ## Legendenpunkte
 
@@ -73,16 +67,14 @@ Die Liste **Teilnehmer** zeigt jeden Charakter mit **Beigetreten:** und Status.
 
 Vergebene Legendenpunkte stehen unter **Vergebene LP** und lassen sich dort löschen. Die Spieler übernehmen sie in ihrem Reiter **Kampagne**. Charaktere, die die Kampagne verlassen haben, bekommen keine Legendenpunkte.
 
-!!! example "Screenshot: `gm-legend-points.png`"
-    Reiter **Legendenpunkte** mit dem Formular **LP vergeben** und der Liste der Vergaben.
+[![Reiter Legendenpunkte mit dem Formular LP vergeben und der Liste der Vergaben.](../assets/screenshots/de/gm-legend-points.webp){ loading=lazy }](../assets/screenshots/de/gm-legend-points.webp)
 
 ## Postfach
 
 - **Nachrichten:** wähle mit **Charakter auswählen** einen Charakter, um seinen Chat zu lesen und zu beantworten. Im Bereich **Broadcast** schreibst du eine Ankündigung an alle Spieler (*Ankündigung an alle Spieler schreiben...*) und schickst sie mit **An alle Spieler senden** ab. Die Spieler sehen sie unter **Ankündigungen**.
 - **Dokumente:** **Dokument hochladen** teilt eine Datei. Wähle den **Empfänger** (einen Charakter oder **Alle**), gib **Titel / Beschreibung** ein, wähle mit **Datei auswählen** die Datei und klicke auf **Hochladen**. Die Spieler sehen die Dokumente unter **Dokumente vom GM**. Hochgeladene Dokumente lassen sich wieder löschen.
 
-!!! example "Screenshot: `gm-mailbox.png`"
-    Reiter **Postfach** mit Chat, Broadcast und dem Dialog **Dokument hochladen**.
+[![Reiter Postfach mit Chat, Broadcast und dem Dialog Dokument hochladen.](../assets/screenshots/de/gm-mailbox.webp){ loading=lazy }](../assets/screenshots/de/gm-mailbox.webp)
 
 ## Modifikatoren
 
@@ -94,8 +86,7 @@ Modifikatoren verändern Attribute von Charakteren, zum Beispiel als Wirkung ein
 
 Aktive Modifikatoren stehen unter **Aktive Modifier** und lassen sich dort löschen. Die Spieler sehen den Modifikator an ihrem Charakter mit dem Zusatz *von GM* und dem Kampagnennamen.
 
-!!! example "Screenshot: `gm-modifiers.png`"
-    Reiter **Modifikatoren** mit dem Formular und der Liste der aktiven Modifikatoren.
+[![Reiter Modifikatoren mit dem Formular und der Liste der aktiven Modifikatoren.](../assets/screenshots/de/gm-modifiers.webp){ loading=lazy }](../assets/screenshots/de/gm-modifiers.webp)
 
 ## Notizen
 
@@ -105,8 +96,7 @@ Der Reiter **Notizen** sammelt Notizen in drei Bereichen: **NPCs**, **Locations*
 - Bearbeiten und Löschen geht über die Symbole daneben.
 - **Tags filtern** zeigt nur Notizen mit bestimmten Tags. **Zurücksetzen** hebt den Filter auf.
 
-!!! example "Screenshot: `gm-notes.png`"
-    Reiter **Notizen** mit NPCs und dem Tag-Filter.
+[![Reiter Notizen mit NPCs und dem Tag-Filter.](../assets/screenshots/de/gm-notes.webp){ loading=lazy }](../assets/screenshots/de/gm-notes.webp)
 
 ## Regelwerk
 
@@ -122,5 +112,3 @@ Der KI-Assistent erzeugt NPCs, Dialoge und Orte. Er nutzt deinen eigenen Anthrop
 4. Gib bei Bedarf **Zusätzliche Hinweise (optional)** ein, zum Beispiel *ein Schmied in Throal, misstrauisch*.
 5. Klicke auf **Generieren**. Darunter erscheint das **Ergebnis**. **Kopieren** kopiert es in die Zwischenablage.
 
-!!! example "Screenshot: `gm-ai.png`"
-    Reiter **KI** mit einem erzeugten NPC.
