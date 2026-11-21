@@ -58,6 +58,13 @@ Im eigenen Coordination-Klon `git pull`, dann zuerst `INDEX.md` lesen und die Ze
 ## Ticket-Lifecycle
 Offen → In Arbeit → Abnahme (Thore). Doku-Tickets haben Testansatz "Analyse" und gehen nach Fertigstellung direkt auf "Abnahme (Thore)" mit Nächster: Thore. "Release" setzt nur Thore, archiviert wird nur durch den Board-Keeper.
 
+## Doku nach GoLive der App
+Nach jedem GoLive der App legt der Board-Keeper ein Ticket "Doku nachziehen für vX.Y.Z" an. Darin:
+- Die Doku-Notizen der ausgelieferten Tickets in Handbuch, Architektur und Faktenblatt umsetzen.
+- Das Faktenblatt (Tickets, Endpunkte, Codezeilen, GoLives) immer aktualisieren, auch wenn die ausgelieferten Tickets keine Doku-Notiz haben.
+- Ändert sich die Oberfläche einer Handbuchseite: über den Board-Keeper bei Testing neue Screenshots für genau diese Bilder anfordern (Skript `ui/docs_screenshots.py`).
+- Quelle ist der Live-Stand der App. Aussagen als "beobachtet" oder "aus dem Code abgeleitet" kennzeichnen.
+
 ## Commits und Branches
 - Jeder Commit nennt im Betreff die Ticketnummer(n), z. B. "Ticket 252: …". Commits, die eine Vorgabe von Thore ohne Ticket umsetzen, beginnen mit "Vorgabe Thore:".
 - Größere Arbeiten, die voraussichtlich nicht im selben GoLive freigegeben werden, auf einem eigenen Branch (`ticket-NNN`) machen und erst nach Thores Freigabe nach `develop` mergen, damit sie andere freigegebene Tickets nicht blockieren.
