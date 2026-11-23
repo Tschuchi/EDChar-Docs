@@ -20,7 +20,7 @@ Zielgruppen:
 ## Darf NICHT
 - In EDCharGen, EDChar_Backend oder EDChar-Testing schreiben. Fehlt dort Doku (README, docs/, RULES.md, RUNBOOK.md), das im Ticket benennen statt selbst schreiben.
 - Den Ordner mit Zugangsdaten neben den Repos, Dateien mit der Endung `.local` oder `.env`-Dateien lesen.
-- Selbstständig nach `main` mergen. `main` ist die öffentliche Website. Gemerged wird nur, wenn Thore ausdrücklich "Docs veröffentlichen" schreibt.
+- Selbstständig nach `main` mergen. `main` ist die öffentliche Website. Gemerged wird nur, wenn Thore ausdrücklich "GoLive" schreibt.
 - Tickets archivieren oder auf "Release" setzen.
 - Aussagen, Zitate, Motive oder Erfahrungen von Thore erfinden. Texte in Thores Stimme (Showcase, Lessons Learned) entstehen nur aus Material, das Thore geliefert hat. Fehlt es, wird es im Ticket erfragt.
 
@@ -58,14 +58,26 @@ Im eigenen Coordination-Klon `git pull`, dann zuerst `INDEX.md` lesen und die Ze
 ## Ticket-Lifecycle
 Offen → In Arbeit → Abnahme (Thore). Doku-Tickets haben Testansatz "Analyse" und gehen nach Fertigstellung direkt auf "Abnahme (Thore)" mit Nächster: Thore. "Release" setzt nur Thore, archiviert wird nur durch den Board-Keeper.
 
-## Kurzbefehl "Docs veröffentlichen"
+## Doku nach GoLive der App
+Nach jedem GoLive der App legt der Board-Keeper ein Ticket "Doku nachziehen für vX.Y.Z" an. Darin:
+- Die Doku-Notizen der ausgelieferten Tickets in Handbuch, Architektur und Faktenblatt umsetzen.
+- Das Faktenblatt (Tickets, Endpunkte, Codezeilen, GoLives) immer aktualisieren, auch wenn die ausgelieferten Tickets keine Doku-Notiz haben.
+- Ändert sich die Oberfläche einer Handbuchseite: über den Board-Keeper bei Testing neue Screenshots für genau diese Bilder anfordern (Skript `ui/docs_screenshots.py`).
+- Quelle ist der Live-Stand der App. Aussagen als "beobachtet" oder "aus dem Code abgeleitet" kennzeichnen.
+
+## Commits und Branches
+- Jeder Commit nennt im Betreff die Ticketnummer(n), z. B. "Ticket 252: …". Commits, die eine Vorgabe von Thore ohne Ticket umsetzen, beginnen mit "Vorgabe Thore:".
+- Größere Arbeiten, die voraussichtlich nicht im selben GoLive freigegeben werden, auf einem eigenen Branch (`ticket-NNN`) machen und erst nach Thores Freigabe nach `develop` mergen, damit sie andere freigegebene Tickets nicht blockieren.
+
+## Kurzbefehl "GoLive"
 Nur auf ausdrückliche Anweisung von Thore. Als einzelne Befehle, nicht verkettet:
-1. Bereinigungsprüfung auf `develop` (siehe oben), ohne Treffer
-2. `git checkout main`
-3. `git pull --ff-only origin main`
-4. `git merge --no-ff develop -m "Docs: Veröffentlichung"`
-5. `git push origin main`
-6. `git checkout develop`
+1. Vor allem anderen: alle Commits auf `develop` seit dem letzten Stand von `main` auflisten (`git log main..develop`). Jeder Commit muss zu einem Ticket mit Status "Release" in `INDEX.md` gehören oder mit "Vorgabe Thore:" beginnen. Trifft das auf einen Commit nicht zu: GoLive abbrechen, nichts mergen und Thore die betroffenen Commits mit Ticket und Status melden (Nächster: Thore).
+2. Bereinigungsprüfung auf `develop` (siehe oben), ohne Treffer
+3. `git checkout main`
+4. `git pull --ff-only origin main`
+5. `git merge --no-ff develop -m "Docs: Veröffentlichung"`
+6. `git push origin main`
+7. `git checkout develop`
 
 Danach den Pages-Lauf abwarten und die Website prüfen. Dieser Ablauf ist unabhängig vom GoLive der App.
 

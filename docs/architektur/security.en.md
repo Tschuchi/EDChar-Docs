@@ -31,6 +31,11 @@ The API test suite checks the 401 and 403 cases after every deploy (see [ADR 000
 
 Character documents and campaign documents are delivered only through endpoints that apply the checks above. The endpoints for uploading and looking up a character picture check character ownership as well.
 
+Pictures of characters and animal companions are an exception by decision of Thore Schuchardt (ticket 246): the files themselves can be fetched without signing in if the address is known. They are protected by their file name, 32 random hexadecimal characters (128 bits) since ticket 205, and by the folder listing being blocked. The folders with character and campaign documents cannot be fetched directly.
+
+- **Observed** on the build server on 2026-11-20 by the Testing instance, without a session: a picture answers 200, the picture folders answer 403, files in the document folders answer 403.
+- The name format is **derived from the code**.
+
 ## Secrets
 
 - Database credentials and the encryption key are only in the configuration file of each environment on the server.

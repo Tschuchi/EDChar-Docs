@@ -36,6 +36,7 @@ Enter your email address and password on the page **Sign in** and click **Sign i
 After signing in you see the sidebar on the left and the main area on the right.
 
 - **Sidebar:** your characters, or your campaigns in game master mode. Hide and show it with the arrow buttons (tooltips **Hide sidebar** and **Show sidebar**). This is useful on small screens.
+- **Handbook:** below the version line in the sidebar. Opens this handbook in a new tab, in the language set in the app.
 - **Top right:** the user account icon (tooltip **User account**) and **Logout**.
 - **Player / Gamemaster:** if you have switched on game master mode in your account, a switch between **Player** and **Gamemaster** appears. See [Game Masters](spielleiter.md#activating-game-master-mode).
 

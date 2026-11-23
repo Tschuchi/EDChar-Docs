@@ -6,18 +6,18 @@ Code passes several checks before it reaches the live server. Some run automatic
 
 | Layer | Who | What | When |
 |---|---|---|---|
-| Static analysis and unit tests (frontend) | Frontend pipeline | `flutter analyze` and 254 unit and widget tests, on the CI runner | every push |
+| Static analysis and unit tests (frontend) | Frontend pipeline | `flutter analyze` and 256 unit and widget tests, on the CI runner | every push |
 | API test suite (backend) | Backend pipeline | 649 checks against the build server: authentication, ownership, response formats, happy paths | after every deploy to build |
 | Live lock (backend) | Backend pipeline | A push to `main` is first deployed to build and tested; the live deploy only starts if the suite is green | every GoLive |
 | Ticket check | Testing instance | UI tests with Playwright, API calls, review of CI runs and tests, depending on the ticket's test approach | every ticket with status "Test (Testing)" |
 | GoLive check | Testing instance | Everything noted in the release collection as "check before GoLive" | before every GoLive |
 | Acceptance | Thore Schuchardt | Manual check on the build server | every ticket before "Release" |
 
-Numbers: status 2026-11-19, see [Facts and figures](facts.md). Design decisions: [ADR 0008](../adr/0008-api-tests-after-every-deploy.md) (API tests) and [ADR 0009](../adr/0009-ui-tests-with-playwright.md) (UI tests).
+Numbers: status 2026-11-23 (API checks per run: 2026-11-07), see [Facts and figures](facts.md). Design decisions: [ADR 0008](../adr/0008-api-tests-after-every-deploy.md) (API tests) and [ADR 0009](../adr/0009-ui-tests-with-playwright.md) (UI tests).
 
 ## Who writes which tests
 
-Frontend and Backend write the unit and API tests in their own repositories. Testing does not write app code. It checks the tickets independently and reviews whether tests were weakened. Its own Playwright scripts live in the testing repository (41 scripts as of 2026-11-19).
+Frontend and Backend write the unit and API tests in their own repositories. Testing does not write app code. It checks the tickets independently and reviews whether tests were weakened. Its own Playwright scripts live in the testing repository (42 scripts as of 2026-11-23).
 
 ## How Testing checks a ticket
 

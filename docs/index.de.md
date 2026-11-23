@@ -12,7 +12,7 @@ Eine Web-App für das Pen-&-Paper-Rollenspiel *Earthdawn* – und ein Beispiel d
 [Zur App](https://edchar.schuchi.eu){ .md-button }
 </div>
 
-EDChar ist eine Web-App für *Earthdawn*. Spieler legen darin ihre Charaktere an und verwalten sie, Spielleiter führen ihre Kampagnen. Die App ist eine Flutter-WebApp mit PHP-Backend, rund 40.800 Zeilen Anwendungscode und rund 17.300 Zeilen Tests ([Stand 2026-11-20](showcase/facts.md#lines-of-code)), und steht auf Englisch und Deutsch zur Verfügung. Diese Website dokumentiert die App und die Art, wie sie gebaut wurde.
+EDChar ist eine Web-App für *Earthdawn*. Spieler legen darin ihre Charaktere an und verwalten sie, Spielleiter führen ihre Kampagnen. Die App ist eine Flutter-WebApp mit PHP-Backend, rund 40.800 Zeilen Anwendungscode und rund 17.500 Zeilen Tests ([Stand 2026-11-23](showcase/facts.md#lines-of-code)), und steht auf Englisch und Deutsch zur Verfügung. Diese Website dokumentiert die App und die Art, wie sie gebaut wurde.
 
 <div class="grid cards" markdown>
 
