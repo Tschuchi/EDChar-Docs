@@ -41,8 +41,10 @@ The app checks on start and after sign-in whether a newer version is on the serv
 
 ## Figures
 
-32 GoLives between 2026-07-02 (v2.1.21.0) and 2026-11-08 (v2.4.0), counted from the backend changelog. See [Facts and figures](facts.md).
+33 GoLives between 2026-07-02 (v2.1.21.0) and 2026-11-23 (v2.4.1), counted from the backend changelog. See [Facts and figures](facts.md).
 
 ## The documentation is separate
 
-This website is published independently of the app. The Docs instance merges to the public branch only when Thore Schuchardt explicitly says "Docs veröffentlichen" (publish docs).
+This website is published independently of the app. The Docs instance merges to the public branch only when Thore Schuchardt explicitly says "GoLive" to it (until 2026-11-20 the command was "Docs veröffentlichen", publish docs). The same rule applies as for the app: only changes that belong to tickets with status "Release" go live.
+
+Since 2026-11-21 the documentation follows each GoLive of the app. Frontend and Backend add a documentation note to every finished ticket. After the GoLive the Board-Keeper collects these notes in a ticket "Doku nachziehen für vX.Y.Z" (update the documentation for vX.Y.Z) for the Docs instance, which updates the handbook, the architecture pages and the facts and figures to the live state.

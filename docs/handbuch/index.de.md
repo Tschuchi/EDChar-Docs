@@ -36,6 +36,7 @@ Gib auf der Seite **Anmeldung** deine E-Mail-Adresse und dein Passwort ein und k
 Nach der Anmeldung siehst du links die Seitenleiste und rechts den Hauptbereich.
 
 - **Seitenleiste:** deine Charaktere, im Spielleiter-Modus deine Kampagnen. Mit den Pfeil-Buttons blendest du sie aus und ein (Tooltips **Seitenleiste ausblenden** und **Seitenleiste einblenden**). Das hilft auf kleinen Bildschirmen.
+- **Handbuch:** in der Seitenleiste unter der Versionszeile. Öffnet dieses Handbuch in einem neuen Tab, in der Sprache, die in der App eingestellt ist.
 - **Oben rechts:** das Symbol für das Benutzerkonto (Tooltip **Benutzerkonto**) und **Abmelden**.
 - **Spieler / Gamemaster:** Hast du in deinem Konto den Spielleiter-Modus eingeschaltet, erscheint ein Schalter zwischen **Spieler** und **Gamemaster**. Siehe [Spielleiter](spielleiter.md#spielleiter-modus-einschalten).
 

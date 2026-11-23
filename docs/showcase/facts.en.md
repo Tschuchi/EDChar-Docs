@@ -1,6 +1,6 @@
 # Facts and figures
 
-**Cut-off date: 2026-11-19.** All numbers were counted from the repositories, the ticket board (`TICKETS.md`) and the ticket archive (`TICKETS_ARCHIV.md`) on that date. Each number states its source and method.
+**Cut-off date: 2026-11-23, after the GoLive of v2.4.1**, unless a section states otherwise. The numbers were counted from the repositories, the ticket board (`INDEX.md` with one file per ticket), the ticket archive since 2026-11-19 (`archiv/`) and the older ticket archive (`TICKETS_ARCHIV.md`). Each number states its source and method. The section [Effectiveness](#effectiveness) still has the cut-off date 2026-11-19.
 
 Labels used on this page:
 
@@ -14,37 +14,37 @@ Labels used on this page:
 | First commit | 2026-04-23 | Frontend and backend repositories, `git log --reverse` (counted) |
 | Ticket board started | 2026-06-27 | First commit of the coordination repository (counted) |
 | Testing instance started | 2026-07-19 | First commit of the testing repository (counted) |
-| Commits | Frontend 452, Backend 422, Board 1,191, Testing 59 | `git rev-list --count HEAD` on the current branch of each repository (counted) |
-| Tickets | 241 | Ticket headings in board and archive. Numbers run from 1 to 243, numbers 23 and 24 were never used (counted) |
-| Tickets archived | 222 | 220 done, 1 deferred, 1 dropped (counted) |
-| Tickets on the board | 19 | Including 2 permanent tickets (release history and release collection) (counted) |
-| Releases (GoLives) | 32 | Entries marked "Release" in the backend changelog, first v2.1.21.0 on 2026-07-02, latest v2.4.0 on 2026-11-08 (counted) |
-| Version entries | 235 | All version headings in the backend changelog, including intermediate build versions (counted) |
+| Commits | Frontend 458, Backend 436, Board 1,293, Testing 68 | `git rev-list --count` on the main working branch of each repository: frontend and backend `develop`, board and testing `main` (counted) |
+| Tickets | 252 | Ticket files on the board and in the archive, plus the ticket headings in the older archive. Numbers run from 1 to 254, numbers 23 and 24 were never used (counted) |
+| Tickets archived | 240 | 238 done, 1 deferred, 1 dropped (counted) |
+| Tickets on the board | 12 | Including 2 permanent tickets (release history and release collection) (counted) |
+| Releases (GoLives) | 33 | Version headings with an exact date and the mark "Release" in the backend changelog, first v2.1.21.0 on 2026-07-02, latest v2.4.1 on 2026-11-23 (counted) |
+| Version entries | 236 | All version headings with an exact date in the backend changelog, including intermediate build versions. Since v2.4.0 there is one version per GoLive (counted) |
 | UI languages | 2 | English and German, one ARB file each in the frontend (counted) |
 
 ## Lines of code
 
-**Cut-off date: 2026-11-20.** Counted with [pygount](https://github.com/roskakori/pygount) 3.2.0 (observed). Snapshots of the remote branches: frontend `develop` at commit `1434373`, backend `develop` at `357af31`, testing repository `main` at `993e960`, board repository `main` at `b0a9741`.
+**Cut-off date: 2026-11-23.** Counted with [pygount](https://github.com/roskakori/pygount) 3.2.0 (observed). Snapshots of the remote branches: frontend `develop` at commit `1b124ab`, backend `develop` at `391db68`, testing repository `main` at `3d5b602`, board repository `main` at `a29f323`. The first count was made on 2026-11-20; for this update the files changed since then were counted again with the same method.
 
 "Code" is the main figure. Like cloc, it includes lines that contain only strings. Comments and blank lines are listed separately.
 
 | Area | Files | Code | Comments | Blank |
 |---|---:|---:|---:|---:|
-| Frontend app (Dart in `lib/`, plus the two self-written files in `web/`) | 186 | 33,350 | 2,649 | 12,049 |
+| Frontend app (Dart in `lib/`, plus the two self-written files in `web/`) | 188 | 33,379 | 2,656 | 12,059 |
 | Backend API (PHP) | 203 | 7,000 | 557 | 2,605 |
 | Backend PDF export (Python) | 1 | 441 | 31 | 56 |
-| **Application code** | **390** | **40,791** | **3,237** | **14,710** |
-| Tests: frontend (Dart, `test/`) | 19 | 2,425 | 58 | 845 |
+| **Application code** | **392** | **40,820** | **3,244** | **14,720** |
+| Tests: frontend (Dart, `test/`) | 20 | 2,437 | 58 | 851 |
 | Tests: backend API suite (Python, `tests/`) | 1 | 1,199 | 97 | 107 |
-| Tests: testing repository (Playwright, Python) | 59 | 13,721 | 692 | 2,328 |
-| **Tests** | **79** | **17,345** | **847** | **3,280** |
-| Tools: backend scripts (backup, clean-up, test data reset) | 5 | 424 | 30 | 136 |
+| Tests: testing repository (Playwright, Python) | 61 | 13,896 | 707 | 2,361 |
+| **Tests** | **82** | **17,532** | **862** | **3,319** |
+| Tools: backend scripts (backup, clean-up, test data reset, renaming old pictures) | 5 | 445 | 34 | 140 |
 | Tools: CI/CD workflows and their helper scripts | 5 | 383 | 58 | 59 |
 | Tools: ticket board server | 2 | 599 | 71 | 63 |
-| **Tools** | **12** | **1,406** | **159** | **258** |
-| **Total** | **481** | **59,542** | **4,243** | **18,248** |
+| **Tools** | **12** | **1,427** | **163** | **262** |
+| **Total** | **486** | **59,779** | **4,269** | **18,301** |
 
-**Translations** are listed separately, not as code: two ARB files with 934 keys each. The English file has 3,014 lines (including a description for each key), the German file 939 lines (counted).
+**Translations** are listed separately, not as code: two ARB files with 935 keys each. The English file has 3,016 lines (including a description for each key), the German file 940 lines (counted).
 
 **Not counted:** generated files (`lib/l10n/generated/`, `*.g.dart`), build and tool folders (`build/`, `.dart_tool/`, `vendor/`, `node_modules/`, virtual environments), the platform scaffolding generated by Flutter (`android/`, `ios/`, `macos/`, `linux/`, `windows/`, and `web/` except `index.html` and `.htaccess`), configuration files (`pubspec.yaml`, `analysis_options.yaml`, IDE files), lockfiles, PDF templates, images, fonts, sounds, test evidence and Markdown documentation.
 
@@ -52,7 +52,7 @@ Labels used on this page:
 
 | Figure | Value | Source and method |
 |---|---|---|
-| Documented endpoints | 201 | Headings of the form `METHOD /path` in the API contract (counted) |
+| Documented endpoints | 201 | Headings of the form `METHOD /path` in the API contract (counted on 2026-11-20; the API contract has not changed since, checked on 2026-11-23) |
 | Distinct endpoint paths | 183 | Same headings, unique paths. Some paths accept more than one method (counted) |
 | PHP files | 203 | All `.php` files in the backend except tests, scripts and templates. This includes shared helpers, so it is an upper bound for endpoints (counted) |
 
@@ -60,14 +60,14 @@ Labels used on this page:
 
 | Figure | Value | Source and method |
 |---|---|---|
-| Frontend unit and widget tests | 254 test cases in 19 files | `test(` and `testWidgets(` calls in `*_test.dart` (counted, static) |
+| Frontend unit and widget tests | 256 test cases in 20 files | `test(` and `testWidgets(` calls in `*_test.dart` (counted, static) |
 | API test suite | 1 script, about 400 check calls in the source | `expect`/`check` calls in the suite (counted, static; loops produce more checks at runtime) |
 | API checks per run | 649 | Result of a CI run against the build server, recorded on the board on 2026-11-07 (observed by the backend instance) |
-| UI test scripts (Playwright) | 41 | `test_*.py` files in the testing repository (counted) |
+| UI test scripts (Playwright) | 42 | `test_*.py` files in the folder `ui/` of the testing repository, without subfolders (counted) |
 
 ## Effectiveness
 
-These figures describe how work moved through the ticket workflow.
+These figures describe how work moved through the ticket workflow. **Cut-off date: 2026-11-19.** They cover the 222 tickets in the older archive (`TICKETS_ARCHIV.md`); tickets archived since then are not included yet.
 
 | Figure | Value | Source and method | Limits |
 |---|---|---|---|
@@ -78,7 +78,7 @@ These figures describe how work moved through the ticket workflow.
 | Reopened tickets | 0 reopened after done, 2 reactivated after being deferred | Markers "reactivated" or "reopened" (tickets 64, 84) (derived from the archive, approximate) | Follow-up work is usually filed as a new ticket, so the number of reopened tickets understates rework. |
 | Lead time, open to live | median 1 day, mean 5.2 days, middle half 1–6 days, maximum 66 days (217 of 222 tickets) | Start: first commit in which the ticket heading appears in `TICKETS.md`. End: field "Erledigt am" (done on) in the archive (derived from the archive, approximate) | The end date is the go-live date, not the date of the "Release" status. Five tickets have no usable date. |
 | Share of analysis tickets | 17 of 222 (8 %) | "Analysis" in the title or in the field "Testansatz" (test approach) (derived from the archive, approximate) | The field "Testansatz" exists only since 2026-10-29. Earlier analysis tickets count only if the title says so. |
-| GoLives | 32 | See "Releases" above (counted) | |
+| GoLives | 33 | See "Releases" above, cut-off date 2026-11-23 (counted) | |
 
 ## History and tools
 
